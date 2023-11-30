@@ -1,0 +1,21 @@
+/**
+ * core/navigation-link
+ */
+.wp-block-navigation-item {
+  $root: &;
+
+  // arrow-link
+  &.is-style-arrow-link {
+    #{$root} {
+      &__label {
+        &:after {
+          content: "↗";
+          padding-inline-start: 0.25rem;
+          vertical-align: middle;
+          text-decoration: none;
+          display: inline-block;
+        }
+      }
+    }
+  }
+}

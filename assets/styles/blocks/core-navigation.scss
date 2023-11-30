@@ -1,0 +1,21 @@
+/**
+ * core/navigation
+ */
+.wp-block-navigation {
+  $root: &;
+
+  .has-child {
+    cursor: pointer;
+  }
+
+  &:not(.has-text-color, .has-background) {
+    #{$root} {
+      &__submenu-container {
+        padding-top: var(--wp--preset--spacing--x-small);
+        border: none;
+        background: var(--wp--preset--color--main);
+        color: var(--wp--custom--color--base);
+      }
+    }
+  }
+}
