@@ -9,27 +9,35 @@
       "duotone": [
         {
           "colors": [
-            "#1d1d1d",
-            "#52ae32"
+            "#00007e",
+            "#6aff7e"
           ],
-          "name": "Apple",
-          "slug": "duotone-apple"
+          "name": "Punchy",
+          "slug": "duotone-punchy"
         },
         {
           "colors": [
             "#1d1d1d",
-            "#2e509e"
+            "#99ff77"
           ],
-          "name": "Sapphire",
-          "slug": "duotone-sapphire"
+          "name": "Green",
+          "slug": "duotone-green"
         },
         {
           "colors": [
             "#1d1d1d",
-            "#fbcb00"
+            "#83a8ff"
           ],
-          "name": "Supernova",
-          "slug": "duotone-supernova"
+          "name": "Blue",
+          "slug": "duotone-blue"
+        },
+        {
+          "colors": [
+            "#1d1d1d",
+            "#ffe678"
+          ],
+          "name": "Yellow",
+          "slug": "duotone-yellow"
         },
         {
           "colors": [
