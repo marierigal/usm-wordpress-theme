@@ -9,6 +9,7 @@
 namespace USM;
 
 define('DOMAIN', sanitize_title(__NAMESPACE__));
+define('ASSETS', esc_url(get_stylesheet_directory_uri()) . '/assets');
 
 /**
  * Set up theme defaults and register various WordPress features.
