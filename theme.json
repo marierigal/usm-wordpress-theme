@@ -13,6 +13,20 @@
         "page"
       ],
       "title": "Page Full Width"
+    },
+    {
+      "name": "single-with-sidebar",
+      "postTypes": [
+        "post"
+      ],
+      "title": "Single With Sidebar"
+    },
+    {
+      "name": "single-full-width",
+      "postTypes": [
+        "post"
+      ],
+      "title": "Single Full Width"
     }
   ],
   "settings": {
