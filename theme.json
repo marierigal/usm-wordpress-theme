@@ -1,5 +1,20 @@
 {
-  "customTemplates": [],
+  "customTemplates": [
+    {
+      "name": "page-with-sidebar",
+      "postTypes": [
+        "page"
+      ],
+      "title": "Page With Sidebar"
+    },
+    {
+      "name": "page-full-width",
+      "postTypes": [
+        "page"
+      ],
+      "title": "Page Full Width"
+    }
+  ],
   "settings": {
     "appearanceTools": true,
     "color": {
