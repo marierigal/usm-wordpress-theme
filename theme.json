@@ -315,7 +315,9 @@
         },
         "border": {
           "color": "var(--wp--preset--color--primary)",
-          "radius": "var(--wp--preset--spacing--xx-small)"
+          "radius": "var(--wp--preset--spacing--xx-small)",
+          "style": "solid",
+          "width": "var(--wp--preset--spacing--xx-small)"
         },
         "color": {
           "background": "var(--wp--preset--color--primary)",
