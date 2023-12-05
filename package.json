@@ -1,0 +1,67 @@
+{
+  "name": "usm-wordpress-theme",
+  "version": "0.1.0",
+  "description": "A WordPress theme for USM website.",
+  "repository": "https://github.com/marierigal/usm-wordpress-theme.git",
+  "author": "Marie Rigal <marierigal4@gmail.com>",
+  "license": "LGPL-2.0-or-later",
+  "engines": {
+    "node": ">=20",
+    "yarn": ">=1.20"
+  },
+  "files": [
+    "assets/css",
+    "assets/images",
+    "assets/fonts",
+    "build",
+    "languages",
+    "parts",
+    "patterns",
+    "templates",
+    "functions.php",
+    "LICENSE.md",
+    "CHANGELOG.md",
+    "screenshot.png",
+    "readme.txt",
+    "style.css",
+    "theme.json"
+  ],
+  "scripts": {
+    "prepare": "husky install",
+    "prebuild": "rimraf build assets/css",
+    "build": "run-p --print-label build:*",
+    "build:scripts": "wp-scripts build",
+    "build:styles": "sass --source-map assets/scss:assets/css",
+    "format": "wp-scripts format",
+    "lint": "run-s --print-label lint:*",
+    "lint:css": "wp-scripts lint-style",
+    "lint:js": "wp-scripts lint-js --no-error-on-unmatched-pattern",
+    "packages-update": "wp-scripts packages-update",
+    "zip": "wp-scripts plugin-zip",
+    "start": "run-p --print-label start:*",
+    "start:blocks": "wp-scripts start",
+    "start:styles": "sass --watch --no-source-map assets/scss:assets/css",
+    "i18n:update": "wp i18n make-pot . languages/usm-block.pot",
+    "i18n:json": "wp i18n make-json languages --no-purge --pretty-print"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^18.4.3",
+    "@commitlint/config-conventional": "^18.4.3",
+    "@google/semantic-release-replace-plugin": "^1.2.7",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@wordpress/i18n": "^4.46.0",
+    "@wordpress/scripts": "^26.17.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.1.0",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^5.0.5",
+    "sass": "^1.69.5",
+    "semantic-release": "^22.0.8"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": "yarn lint:js --fix",
+    "*.{css,scss}": "yarn lint:css --fix",
+    "*.{js,jsx,ts,tsx,md,json,yml,yaml,txt}": "yarn format"
+  }
+}

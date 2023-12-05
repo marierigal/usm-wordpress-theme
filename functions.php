@@ -8,7 +8,14 @@
 
 namespace USM;
 
+/**
+ * Domain name
+ */
 define('DOMAIN', sanitize_title(__NAMESPACE__));
+
+/**
+ * Assets folder URI
+ */
 define('ASSETS', esc_url(get_stylesheet_directory_uri()) . '/assets');
 
 /**
@@ -65,7 +72,7 @@ function register_block_styles()
   }
 
   // Scan our styles folder to locate block styles.
-  $styles_path = 'assets/styles/blocks';
+  $styles_path = 'assets/css';
   $files = glob(get_template_directory() . "/{$styles_path}/*.css");
   foreach ($files as $file) {
     // Get the filename and core block name.
