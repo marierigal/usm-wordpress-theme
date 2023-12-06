@@ -59,7 +59,7 @@
       "assets": [
         {
           "path": "*.zip",
-          "name": "$(cat package.json | jq -r '.name')-${nextRelease.gitTag}.zip",
+          "name": "usm-wordpress-theme-${nextRelease.gitTag}.zip",
           "label": "WordPress Theme ${nextRelease.gitTag}"
         }
       ]
