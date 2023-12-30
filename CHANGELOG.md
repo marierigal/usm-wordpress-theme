@@ -1,3 +1,13 @@
+# [1.1.0](https://github.com/marierigal/usm-wordpress-theme/compare/v1.0.0...v1.1.0) (2023-12-30)
+
+
+### Features
+
+* **i18n:** add FR translation ([19bf1ec](https://github.com/marierigal/usm-wordpress-theme/commit/19bf1ecee39e474453ed9093c6fefa845958c56c))
+* **templates:** add no title templates ([dd0eb5d](https://github.com/marierigal/usm-wordpress-theme/commit/dd0eb5dd35f22a68fcef9fd773b4db6d5762e428))
+* **theme:** update core/button block style ([fbb5f52](https://github.com/marierigal/usm-wordpress-theme/commit/fbb5f5218f2f4596d78d7a56bf1308a63bcad355))
+* **theme:** update fonts ([a60b40a](https://github.com/marierigal/usm-wordpress-theme/commit/a60b40a05cc41a288d354b44b670c6dfd0e3fb12))
+
 # 1.0.0 (2023-12-05)
 
 
