@@ -1,0 +1,359 @@
+# Copyright (C) 2023 Marie Rigal
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: USM 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/usm-wordpress-theme\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2023-12-30T16:33:35+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.9.0\n"
+"X-Domain: usm\n"
+
+#. Theme Name of the theme
+msgid "USM"
+msgstr ""
+
+#. Theme URI of the theme
+msgid "https://github.com/marierigal/usm-wordpress-theme"
+msgstr ""
+
+#. Description of the theme
+msgid "A WordPress theme for USM website."
+msgstr ""
+
+#. Author of the theme
+msgid "Marie Rigal"
+msgstr ""
+
+#. Author URI of the theme
+msgid "https://github.com/marierigal"
+msgstr ""
+
+#. translators: Label for core/navigation-link block arrow-link style
+#: functions.php:61
+msgctxt "Block style name"
+msgid "With arrow"
+msgstr ""
+
+#. translators: Label for usm/theme pattern category
+#: functions.php:108
+msgctxt "Pattern category name"
+msgid "Theme"
+msgstr ""
+
+#. translators: Label for usm/header pattern category
+#: functions.php:112
+msgctxt "Pattern category name"
+msgid "Header"
+msgstr ""
+
+#. translators: Label for usm/footer pattern category
+#: functions.php:116
+msgctxt "Pattern category name"
+msgid "Footer"
+msgstr ""
+
+#. translators: Label for usm/posts pattern category
+#: functions.php:120
+msgctxt "Pattern category name"
+msgid "Posts"
+msgstr ""
+
+#. translators: Label for usm/sidebar pattern category
+#: functions.php:124
+msgctxt "Pattern category name"
+msgid "Sidebar"
+msgstr ""
+
+#. translators: Label for sidebar template part area
+#: functions.php:144
+msgctxt "Part area name"
+msgid "Sidebar"
+msgstr ""
+
+#. translators: Description for sidebar template part area
+#: functions.php:146
+msgctxt "Part area description"
+msgid "The Sidebar template defines a page area that can be found on the Page (With Sidebar) template."
+msgstr ""
+
+#: patterns/404.php
+msgctxt "Pattern title"
+msgid "404"
+msgstr ""
+
+#: patterns/404.php:22
+msgid "404 Error"
+msgstr ""
+
+#: patterns/404.php:28
+msgid "The page you are looking for does no longer exists or has been moved."
+msgstr ""
+
+#: patterns/404.php:37
+msgid "Back home"
+msgstr ""
+
+#: patterns/footer.php
+msgctxt "Pattern title"
+msgid "Footer"
+msgstr ""
+
+#: patterns/header.php
+msgctxt "Pattern title"
+msgid "Header"
+msgstr ""
+
+#: patterns/horizontal-post.php
+msgctxt "Pattern title"
+msgid "Horizontal Post"
+msgstr ""
+
+#: patterns/no-results.php
+msgctxt "Pattern title"
+msgid "Query No Results"
+msgstr ""
+
+#: patterns/no-results.php:13
+msgid "No posts found."
+msgstr ""
+
+#: patterns/post.php
+msgctxt "Pattern title"
+msgid "Full Post"
+msgstr ""
+
+#: patterns/posts-grid.php
+msgctxt "Pattern title"
+msgid "Grid of posts"
+msgstr ""
+
+#: patterns/posts-list.php
+msgctxt "Pattern title"
+msgid "List of posts"
+msgstr ""
+
+#: patterns/sidebar.php
+msgctxt "Pattern title"
+msgid "Sidebar"
+msgstr ""
+
+#: patterns/vertical-post.php
+msgctxt "Pattern title"
+msgid "Vertical Post"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Page (No Title)"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Page With Sidebar"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Page With Sidebar (No Title)"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Page Full Width"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Page Full Width (No Title)"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Single With Sidebar"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Single Full Width"
+msgstr ""
+
+#: theme.json
+msgctxt "Duotone name"
+msgid "Punchy"
+msgstr ""
+
+#: theme.json
+msgctxt "Duotone name"
+msgid "Green"
+msgstr ""
+
+#: theme.json
+msgctxt "Duotone name"
+msgid "Blue"
+msgstr ""
+
+#: theme.json
+msgctxt "Duotone name"
+msgid "Yellow"
+msgstr ""
+
+#: theme.json
+msgctxt "Duotone name"
+msgid "Grayscale"
+msgstr ""
+
+#: theme.json
+msgctxt "Gradient name"
+msgid "Apple & Black"
+msgstr ""
+
+#: theme.json
+msgctxt "Gradient name"
+msgid "Apple & Sapphire"
+msgstr ""
+
+#: theme.json
+msgctxt "Gradient name"
+msgid "Sapphire & Supernova"
+msgstr ""
+
+#: theme.json
+msgctxt "Gradient name"
+msgid "Supernova & Apple"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Base"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Main"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Primary"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Secondary"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Tertiary"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Light gray"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Medium gray"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Dark gray"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "XXS"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "XS"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "Small"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "Medium"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "Large"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "XL"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "XXL"
+msgstr ""
+
+#: theme.json
+msgctxt "Font family name"
+msgid "System Sans-serif"
+msgstr ""
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Monospace"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "X Small"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Small"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Medium"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Large"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "X Large"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "XX Large"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Header"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Footer"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Sidebar"
+msgstr ""

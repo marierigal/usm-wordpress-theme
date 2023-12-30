@@ -19,13 +19,13 @@
 
 <!-- wp:heading {"textAlign":"center","level":1} -->
 <h1 class="wp-block-heading has-text-align-center">
-  <?php _e('404 Error', DOMAIN); ?>
+  <?php _e('404 Error', 'usm'); ?>
 </h1>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center"} -->
 <p class="has-text-align-center">
-  <?php _e('The page you are looking for does no longer exists or has been moved.', DOMAIN); ?>
+  <?php _e('The page you are looking for does no longer exists or has been moved.', 'usm'); ?>
 </p>
 <!-- /wp:paragraph -->
 
@@ -34,7 +34,7 @@
   <!-- wp:button -->
   <div class="wp-block-button">
     <a class="wp-block-button__link wp-element-button" href="<?php echo get_home_url(); ?>">
-      <?php _e('Back home', DOMAIN); ?>
+      <?php _e('Back home', 'usm'); ?>
     </a>
   </div>
   <!-- /wp:button -->

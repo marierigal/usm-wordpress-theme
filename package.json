@@ -41,8 +41,8 @@
     "start": "run-p --print-label start:*",
     "start:blocks": "wp-scripts start",
     "start:styles": "sass --watch --no-source-map assets/scss:assets/css",
-    "i18n:update": "wp i18n make-pot . languages/usm-block.pot",
-    "i18n:json": "wp i18n make-json languages --no-purge --pretty-print"
+    "i18n:update": "yarn prebuild && wp i18n make-pot . languages/usm.pot",
+    "i18n:json": "yarn prebuild && wp i18n make-json languages --no-purge --pretty-print"
   },
   "devDependencies": {
     "@commitlint/cli": "^18.4.3",
@@ -62,6 +62,6 @@
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": "yarn lint:js --fix",
     "*.{css,scss}": "yarn lint:css --fix",
-    "*.{js,jsx,ts,tsx,md,json,yml,yaml,txt}": "yarn format"
+    "*.{js,jsx,ts,tsx,md,json,yml,yaml}": "yarn format"
   }
 }
