@@ -1,14 +1,29 @@
 {
   "customTemplates": [
     {
+      "name": "page-no-title",
+      "postTypes": ["page"],
+      "title": "Page (No Title)"
+    },
+    {
       "name": "page-with-sidebar",
       "postTypes": ["page"],
       "title": "Page With Sidebar"
     },
     {
+      "name": "page-with-sidebar-no-title",
+      "postTypes": ["page"],
+      "title": "Page With Sidebar (No Title)"
+    },
+    {
       "name": "page-full-width",
       "postTypes": ["page"],
       "title": "Page Full Width"
+    },
+    {
+      "name": "page-full-width-no-title",
+      "postTypes": ["page"],
+      "title": "Page Full Width (No Title)"
     },
     {
       "name": "single-with-sidebar",
