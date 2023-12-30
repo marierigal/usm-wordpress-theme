@@ -53,8 +53,7 @@
       "assets": [
         {
           "path": "*.zip",
-          "name": "usm-wordpress-theme-${nextRelease.gitTag}.zip",
-          "label": "WordPress Theme ${nextRelease.gitTag}"
+          "name": "usm-wordpress-theme.zip"
         }
       ]
     }
