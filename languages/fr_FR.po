@@ -1,0 +1,372 @@
+# Copyright (C) 2023 Marie Rigal
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: USM 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/usm-wordpress-"
+"theme\n"
+"POT-Creation-Date: 2023-12-30T16:33:35+00:00\n"
+"PO-Revision-Date: 2023-12-30 17:34+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.3.2\n"
+
+#. Theme Name of the theme
+msgid "USM"
+msgstr "USM"
+
+#. Theme URI of the theme
+msgid "https://github.com/marierigal/usm-wordpress-theme"
+msgstr "https://github.com/marierigal/usm-wordpress-theme"
+
+#. Description of the theme
+msgid "A WordPress theme for USM website."
+msgstr "Thème WordPress personnalisé pour le site web USM."
+
+#. Author of the theme
+msgid "Marie Rigal"
+msgstr "Marie Rigal"
+
+#. Author URI of the theme
+msgid "https://github.com/marierigal"
+msgstr "https://github.com/marierigal"
+
+#. translators: Label for core/navigation-link block arrow-link style
+#: functions.php:61
+msgctxt "Block style name"
+msgid "With arrow"
+msgstr "Avec une flèche"
+
+#. translators: Label for usm/theme pattern category
+#: functions.php:108
+msgctxt "Pattern category name"
+msgid "Theme"
+msgstr "Thème"
+
+#. translators: Label for usm/header pattern category
+#: functions.php:112
+msgctxt "Pattern category name"
+msgid "Header"
+msgstr "En-tête"
+
+#. translators: Label for usm/footer pattern category
+#: functions.php:116
+msgctxt "Pattern category name"
+msgid "Footer"
+msgstr "Pied de page"
+
+#. translators: Label for usm/posts pattern category
+#: functions.php:120
+msgctxt "Pattern category name"
+msgid "Posts"
+msgstr "Article"
+
+#. translators: Label for usm/sidebar pattern category
+#: functions.php:124
+msgctxt "Pattern category name"
+msgid "Sidebar"
+msgstr "Colonne latérale"
+
+#. translators: Label for sidebar template part area
+#: functions.php:144
+msgctxt "Part area name"
+msgid "Sidebar"
+msgstr "Colonne latérale"
+
+#. translators: Description for sidebar template part area
+#: functions.php:146
+msgctxt "Part area description"
+msgid ""
+"The Sidebar template defines a page area that can be found on the Page (With "
+"Sidebar) template."
+msgstr ""
+"Le modèle Colonne latérale défini une zone de page qui peut être trouvée "
+"dans le modèle de page avec colonne latérale."
+
+#: patterns/404.php
+msgctxt "Pattern title"
+msgid "404"
+msgstr "404"
+
+#: patterns/404.php:22
+msgid "404 Error"
+msgstr "Erreur 404"
+
+#: patterns/404.php:28
+msgid "The page you are looking for does no longer exists or has been moved."
+msgstr "La page que vous cherchez n’existe plus ou a été déplacée."
+
+#: patterns/404.php:37
+msgid "Back home"
+msgstr "Retour à l’accueil"
+
+#: patterns/footer.php
+msgctxt "Pattern title"
+msgid "Footer"
+msgstr "Pied de page"
+
+#: patterns/header.php
+msgctxt "Pattern title"
+msgid "Header"
+msgstr "En-tête"
+
+#: patterns/horizontal-post.php
+msgctxt "Pattern title"
+msgid "Horizontal Post"
+msgstr "Article horizontal"
+
+#: patterns/no-results.php
+msgctxt "Pattern title"
+msgid "Query No Results"
+msgstr "Requête sans résultat"
+
+#: patterns/no-results.php:13
+msgid "No posts found."
+msgstr "Aucun article trouvé."
+
+#: patterns/post.php
+msgctxt "Pattern title"
+msgid "Full Post"
+msgstr "Article complet"
+
+#: patterns/posts-grid.php
+msgctxt "Pattern title"
+msgid "Grid of posts"
+msgstr "Grille d’articles"
+
+#: patterns/posts-list.php
+msgctxt "Pattern title"
+msgid "List of posts"
+msgstr "Liste d’articles"
+
+#: patterns/sidebar.php
+msgctxt "Pattern title"
+msgid "Sidebar"
+msgstr "Colonne latérale"
+
+#: patterns/vertical-post.php
+msgctxt "Pattern title"
+msgid "Vertical Post"
+msgstr "Article vertical"
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Page (No Title)"
+msgstr "Page (sans titre)"
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Page With Sidebar"
+msgstr "Page avec colonne latérale"
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Page With Sidebar (No Title)"
+msgstr "Page avec colonne latérale (sans titre)"
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Page Full Width"
+msgstr "Page pleine largeur"
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Page Full Width (No Title)"
+msgstr "Page pleine largeur (sans titre)"
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Single With Sidebar"
+msgstr "Article avec colonne latérale"
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Single Full Width"
+msgstr "Article pleine largeur"
+
+#: theme.json
+msgctxt "Duotone name"
+msgid "Punchy"
+msgstr "Punchy"
+
+#: theme.json
+msgctxt "Duotone name"
+msgid "Green"
+msgstr "Vert"
+
+#: theme.json
+msgctxt "Duotone name"
+msgid "Blue"
+msgstr "Bleu"
+
+#: theme.json
+msgctxt "Duotone name"
+msgid "Yellow"
+msgstr "Jaune"
+
+#: theme.json
+msgctxt "Duotone name"
+msgid "Grayscale"
+msgstr "Échelle de gris"
+
+#: theme.json
+msgctxt "Gradient name"
+msgid "Apple & Black"
+msgstr "Apple & Black"
+
+#: theme.json
+msgctxt "Gradient name"
+msgid "Apple & Sapphire"
+msgstr "Apple & Sapphire"
+
+#: theme.json
+msgctxt "Gradient name"
+msgid "Sapphire & Supernova"
+msgstr "Sapphire & Supernova"
+
+#: theme.json
+msgctxt "Gradient name"
+msgid "Supernova & Apple"
+msgstr "Supernova & Apple"
+
+#: theme.json
+msgctxt "Color name"
+msgid "Base"
+msgstr "Base"
+
+#: theme.json
+msgctxt "Color name"
+msgid "Main"
+msgstr "Principale"
+
+#: theme.json
+msgctxt "Color name"
+msgid "Primary"
+msgstr "Primaire"
+
+#: theme.json
+msgctxt "Color name"
+msgid "Secondary"
+msgstr "Secondaire"
+
+#: theme.json
+msgctxt "Color name"
+msgid "Tertiary"
+msgstr "Tertière"
+
+#: theme.json
+msgctxt "Color name"
+msgid "Light gray"
+msgstr "Gris léger"
+
+#: theme.json
+msgctxt "Color name"
+msgid "Medium gray"
+msgstr "Gris moyen"
+
+#: theme.json
+msgctxt "Color name"
+msgid "Dark gray"
+msgstr "Gris foncé"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "XXS"
+msgstr "XXS"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "XS"
+msgstr "XS"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "Small"
+msgstr "Small"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "Medium"
+msgstr "Medium"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "Large"
+msgstr "Large"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "XL"
+msgstr "XL"
+
+#: theme.json
+msgctxt "Space size name"
+msgid "XXL"
+msgstr "XXL"
+
+#: theme.json
+msgctxt "Font family name"
+msgid "System Sans-serif"
+msgstr "System Sans-serif"
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Monospace"
+msgstr "Monospace"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "X Small"
+msgstr "X Small"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Small"
+msgstr "Small"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Medium"
+msgstr "Medium"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Large"
+msgstr "Large"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "X Large"
+msgstr "X Large"
+
+#: theme.json
+msgctxt "Font size name"
+msgid "XX Large"
+msgstr "XX Large"
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Header"
+msgstr "En-tête"
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Footer"
+msgstr "Pied de page"
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Sidebar"
+msgstr "Colonne latérale"
+
+#~ msgctxt "Font family name"
+#~ msgid "Amatic"
+#~ msgstr "Amatic"
+
+#~ msgctxt "Font family name"
+#~ msgid "Inter"
+#~ msgstr "Inter"

@@ -10,6 +10,6 @@
 <p
   class="has-text-align-center has-main-color has-tertiary-background-color has-text-color has-background has-link-color"
 >
-  <?php _e('No posts found.', DOMAIN); ?>
+  <?php _e('No posts found.', 'usm'); ?>
 </p>
 <!-- /wp:paragraph -->
