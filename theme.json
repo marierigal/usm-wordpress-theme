@@ -297,6 +297,21 @@
     "useRootPaddingAwareAlignments": true
   },
   "styles": {
+    "blocks": {
+      "core/button": {
+        "spacing": {
+          "padding": {
+            "bottom": "var(--wp--preset--spacing--x-small)",
+            "left": "var(--wp--preset--spacing--small)",
+            "right": "var(--wp--preset--spacing--small)",
+            "top": "var(--wp--preset--spacing--x-small)"
+          }
+        },
+        "typography": {
+          "fontWeight": "var(--wp--custom--font-weight--bold)"
+        }
+      }
+    },
     "color": {
       "background": "var(--wp--preset--color--base)",
       "text": "var(--wp--preset--color--main)"
