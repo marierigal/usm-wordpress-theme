@@ -11,7 +11,7 @@
 <figure class="wp-block-image size-full is-style-default">
   <img
     class="wp-image-1705"
-    src="<?php echo ASSETS . '/images/404-illustration.png'; ?>"
+    src="<?php echo USM_ASSETS . '/images/404-illustration.png'; ?>"
     alt=""
   />
 </figure>

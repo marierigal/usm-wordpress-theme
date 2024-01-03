@@ -14,6 +14,7 @@
     "assets/images",
     "assets/fonts",
     "build",
+    "includes",
     "languages",
     "parts",
     "patterns",
