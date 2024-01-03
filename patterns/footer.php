@@ -2,7 +2,7 @@
 /**
  * Title: Footer
  * Slug: usm/footer
- * Categories: footer, theme
+ * Categories: footer
  */
 ?>
 

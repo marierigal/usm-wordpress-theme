@@ -2,7 +2,7 @@
 /**
  * Title: Header
  * Slug: usm/header
- * Categories: header, theme
+ * Categories: header
  */
 ?>
 

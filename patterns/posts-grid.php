@@ -2,7 +2,7 @@
 /**
  * Title: Grid of posts
  * Slug: usm/posts-grid
- * Categories: query
+ * Categories: posts
  * Block Types: core/query
  */
 ?>
