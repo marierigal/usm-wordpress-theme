@@ -17,7 +17,7 @@ A WordPress theme for USM website.
 
 == Copyright ==
 
-USM WordPress Theme, (C) 2023 Marie Rigal
+USM WordPress Theme, (C) 2024 Marie Rigal
 USM is distributed under the terms of the GNU GPL.
 
 This program is free software: you can redistribute it and/or modify
@@ -30,19 +30,16 @@ but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details.
 
-Amatic SC Font
-Copyright 2015 The Amatic SC Project Authors (https://github.com/googlefonts/AmaticSC)
-This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL
-License URL: http://scripts.sil.org/OFL
-Source: http://www.sansoxygen.com
--- End of Amatic SC Font credits --
+Canter Bold Font
+Copyright (c) 2013 by Christopher J. Lee. All rights reserved.
+-- End of Canter Bold Font credits --
 
-Inter Font
-Copyright 2020 The Inter Project Authors (https://github.com/rsms/inter)
-This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL
-License URL: http://scripts.sil.org/OFL
-Source: https://rsms.me/
--- End of Inter Font credits --
+Calibri Font
+© 2012 Microsoft Corporation. All Rights Reserved.
+You may use this font as permitted by the EULA for the product in which this font is included to display and print content. You may only (i) embed this font in content as permitted by the embedding...
+License URL: http://www.microsoft.com/typography/fonts/default.aspx
+Source: http://www.microsoft.com/typography/ctfonts
+-- End of Calibri Font credits --
 
 == Recommended Plugins ==
 
