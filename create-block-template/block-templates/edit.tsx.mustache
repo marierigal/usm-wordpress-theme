@@ -1,0 +1,27 @@
+import { useBlockProps } from '@wordpress/block-editor';
+import { BlockEditProps } from '@wordpress/blocks';
+import { FC } from 'react';
+
+import './editor.scss';
+
+/**
+ * @see block.json/attributes
+ */
+export interface Props {}
+
+/**
+* @see block.json/useContext
+*/
+export interface Context {}
+
+export const edit: FC<BlockEditProps<Props>> = ({
+  attributes,
+  setAttributes,
+  context,
+} : {
+  attributes: Props;
+  setAttributes: (props: Partial<Props>) => void;
+  context: Partial<Context>;
+}) => {
+  return <p {...useBlockProps()}>Hello world!</p>;
+};

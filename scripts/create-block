@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+
+WORKING_DIR=$(pwd)
+NAMESPACE="usm"
+TARGET_DIR="./src/blocks"
+TEMPLATE_PATH="./create-block-template"
+SLUG=$1
+
+# if no slug is provided, prompt for it with default value `example`
+if [ -z "$SLUG" ]; then
+  read -rp "? The block slug used for identification (also the output folder name): " SLUG
+  SLUG=${SLUG:-example}
+fi
+
+# @see https://github.com/WordPress/gutenberg/issues/44717
+mkdir -p $TARGET_DIR
+cd $TARGET_DIR || exit
+
+# create block from custom template
+npx @wordpress/create-block@^4.32.0 --no-plugin --namespace "$NAMESPACE" --template "$WORKING_DIR/$TEMPLATE_PATH" "$SLUG"
+
+# replace textdomain value in block.json by $NAMESPACE (@see https://github.com/WordPress/gutenberg/issues/54980)
+sed -i '' "s/\"textdomain\": \".*\"/\"textdomain\": \"$NAMESPACE\"/g" "$WORKING_DIR/$TARGET_DIR/$SLUG/block.json"
+
+# fix block.json format
+npx prettier --write "$WORKING_DIR/$TARGET_DIR/$SLUG/block.json"
