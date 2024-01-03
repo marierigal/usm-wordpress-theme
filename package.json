@@ -28,7 +28,8 @@
   ],
   "scripts": {
     "prepare": "husky install",
-    "prebuild": "rimraf build assets/css",
+    "clean": "rimraf build assets/css *.zip",
+    "prebuild": "yarn clean",
     "build": "run-p --print-label build:*",
     "build:scripts": "wp-scripts build",
     "build:styles": "sass --source-map assets/scss:assets/css",
@@ -41,8 +42,9 @@
     "start": "run-p --print-label start:*",
     "start:blocks": "wp-scripts start",
     "start:styles": "sass --watch --no-source-map assets/scss:assets/css",
-    "i18n:update": "yarn prebuild && wp i18n make-pot . languages/usm.pot",
-    "i18n:json": "yarn prebuild && wp i18n make-json languages --no-purge --pretty-print"
+    "prei18n": "yarn build",
+    "i18n": "wp i18n make-pot . languages/usm.pot",
+    "i18n:json": "wp i18n make-json languages --no-purge --pretty-print"
   },
   "devDependencies": {
     "@commitlint/cli": "^18.4.3",
