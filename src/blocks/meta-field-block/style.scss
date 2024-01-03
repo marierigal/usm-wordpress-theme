@@ -1,0 +1,30 @@
+/**
+* BLOCK: Meta Field Block
+*/
+
+.wp-block-usm-meta-field-block {
+  &,
+  * {
+    box-sizing: border-box;
+  }
+
+  &.is-display-inline-block {
+    display: inline-block;
+
+    .value + .suffix,
+    .prefix + .value {
+      margin-left: 0.5rem;
+    }
+  }
+
+  &.is-image-field {
+    display: block;
+    margin: 0;
+
+    > img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
