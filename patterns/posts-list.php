@@ -2,7 +2,7 @@
 /**
  * Title: List of posts
  * Slug: usm/posts-list
- * Categories: query
+ * Categories: posts
  * Block Types: core/query
  */
 ?>

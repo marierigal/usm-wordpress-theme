@@ -2,7 +2,7 @@
 /**
  * Title: Sidebar
  * Slug: usm/sidebar
- * Categories: sidebar, theme
+ * Categories: sidebar
  */
 ?>
 

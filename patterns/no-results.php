@@ -2,7 +2,7 @@
 /**
  * Title: Query No Results
  * Slug: usm/no-results
- * Categories: theme, posts
+ * Categories: posts
  */
 ?>
 
