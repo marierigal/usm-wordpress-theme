@@ -43,3 +43,11 @@ This Font Software is licensed under the SIL Open Font License, Version 1.1. Thi
 License URL: http://scripts.sil.org/OFL
 Source: https://rsms.me/
 -- End of Inter Font credits --
+
+== Recommended Plugins ==
+
+Advanced Custom Fields PRO
+https://www.advancedcustomfields.com/pro/
+
+PublishPress Capabilities
+https://wordpress.org/plugins/capability-manager-enhanced/
