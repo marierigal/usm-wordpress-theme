@@ -1,0 +1,132 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "usm/meta-field-block",
+  "version": "1.0.0",
+  "title": "Meta Field Block",
+  "description": "Display a meta field or a custom field as a block, supporting ACF fields.",
+  "category": "theme",
+  "icon": "smiley",
+  "keywords": ["meta", "custom", "acf", "field", "metadata"],
+  "usesContext": ["postId", "postType"],
+  "attributes": {
+    "textAlign": {
+      "type": "string"
+    },
+    "fieldType": {
+      "type": "string",
+      "default": "meta"
+    },
+    "fieldName": {
+      "type": "string"
+    },
+    "fieldSettings": {
+      "type": "object"
+    },
+    "hideEmpty": {
+      "type": "boolean",
+      "default": false
+    },
+    "emptyMessage": {
+      "type": "string",
+      "default": ""
+    },
+    "prefix": {
+      "type": "string"
+    },
+    "suffix": {
+      "type": "string"
+    },
+    "labelAsPrefix": {
+      "type": "boolean",
+      "default": false
+    },
+    "displayLayout": {
+      "type": "string",
+      "default": ""
+    },
+    "tagName": {
+      "type": "string",
+      "default": "div"
+    },
+    "showOutline": {
+      "type": "boolean",
+      "default": false
+    },
+    "width": {
+      "type": "string"
+    },
+    "height": {
+      "type": "string"
+    },
+    "aspectRatio": {
+      "type": "string"
+    },
+    "scale": {
+      "type": "string"
+    },
+    "sizeSlug": {
+      "type": "string"
+    }
+  },
+  "supports": {
+    "align": true,
+    "alignWide": true,
+    "anchor": true,
+    "color": {
+      "text": true,
+      "background": true,
+      "gradients": true,
+      "link": true,
+      "__experimentalDefaultControls": {
+        "text": true,
+        "background": true
+      }
+    },
+    "filter": {
+      "duotone": true
+    },
+    "html": false,
+    "spacing": {
+      "margin": true,
+      "padding": true,
+      "blockGap": true,
+      "__experimentalDefaultControls": {
+        "margin": false,
+        "padding": true,
+        "blockGap": false
+      }
+    },
+    "__experimentalBorder": {
+      "color": true,
+      "radius": true,
+      "style": true,
+      "width": true,
+      "__experimentalDefaultControls": false
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true,
+      "__experimentalFontFamily": true,
+      "__experimentalFontStyle": true,
+      "__experimentalFontWeight": true,
+      "__experimentalLetterSpacing": true,
+      "__experimentalTextTransform": true,
+      "__experimentalTextDecoration": true,
+      "__experimentalDefaultControls": {
+        "fontSize": false,
+        "fontAppearance": true,
+        "textTransform": true
+      }
+    }
+  },
+  "selectors": {
+    "filter": {
+      "duotone": ".wp-block-usm-meta-field-block img"
+    }
+  },
+  "textdomain": "usm",
+  "editorScript": "file:./index.js",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}

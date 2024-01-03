@@ -1,0 +1,126 @@
+{
+  "translation-revision-date": "2024-01-04 12:31+0100",
+  "generator": "WP-CLI/2.9.0",
+  "source": "build/blocks/meta-field-block/index.js",
+  "domain": "messages",
+  "locale_data": {
+    "messages": {
+      "": {
+        "domain": "messages",
+        "lang": "fr_FR",
+        "plural-forms": "nplurals=2; plural=(n != 1);"
+      },
+      "This data type is not supported!": ["Ce type de donn\u00e9es n'est pas pris en charge !"],
+      "Panel title\u0004Block style settings": ["Style du bloc"],
+      "Input label\u0004Show block outline": ["Afficher le contour du bloc"],
+      "Input help\u0004Highlight the block on the Editor only.": [
+        "Met en surbrillance le bloc dans l\u2019\u00e9diteur uniquement."
+      ],
+      "Ratio option\u0004Original": ["Taille d\u2019origine"],
+      "Ratio option\u0004Square - 1:1": ["Carr\u00e9 - 1:1"],
+      "Ratio option\u0004Standard - 4:3": ["Standard - 4:3"],
+      "Ratio option\u0004Portrait - 3:4": ["Portrait - 3:4"],
+      "Ratio option\u0004Classic - 3:2": ["Classique - 3:2"],
+      "Ratio option\u0004Portrait classic - 2:3": ["Portrait classique - 2:3"],
+      "Ratio option\u0004Wide - 16:9": ["Large - 16:9"],
+      "Ratio option\u0004High - 9:16": ["Haute - 9:16"],
+      "Ratio option\u0004Custom": ["Personnalis\u00e9"],
+      "Scale option\u0004Cover": ["Couvrir"],
+      "Input help\u0004Image covers the space evenly.": [
+        "L\u2019image couvre l\u2019espace uniform\u00e9ment."
+      ],
+      "Scale option\u0004Contain": ["Contenir"],
+      "Input help\u0004Image is contained without distortion.": [
+        "L\u2019image est contenue sans distorsion."
+      ],
+      "Image size option\u0004Thumbnail": ["Miniature"],
+      "Image size option\u0004Medium": ["Moyenne"],
+      "Image size option\u0004Large": ["Grande"],
+      "Image size option\u0004Full Size": ["Taille originale"],
+      "Panel title\u0004Image style settings": ["Style de l\u2019image"],
+      "Input label\u0004Ratio": ["Proportion de taille"],
+      "Input label\u0004Apply": ["Appliquer"],
+      "Input label\u0004Width": ["Largeur"],
+      "Input placeholder\u0004Auto": ["Automatique"],
+      "Input label\u0004Height": ["Hauteur"],
+      "Input label\u0004Resolution": ["R\u00e9solution"],
+      "Input help\u0004Choose a size for the source image.": [
+        "S\u00e9lectionnez la taille de l\u2019image source."
+      ],
+      "Panel title\u0004Meta field settings": ["Param\u00e8tres"],
+      "Input label\u0004Field type": ["Type de donn\u00e9e"],
+      "Input help\u0004Choose a field type": ["Choisir un type de donn\u00e9e"],
+      "Input label\u0004Field name": ["Nom du champ"],
+      "Input label\u0004Hide block if the value is empty": ["Cacher le bloc si la valeur est vide"],
+      "Input label\u0004Empty message": ["Message si vide"],
+      "Input help\u0004Display this text if the value is empty.": [
+        "Affiche ce texte si la valeur est vide."
+      ],
+      "Input label\u0004Change tag name": ["Changer le nom de la balise"],
+      "Display layout option\u0004Inline block": ["Bloc en ligne"],
+      "Display layout option\u0004Block": ["Bloc"],
+      "Display layout option\u0004Auto": ["Automatique"],
+      "Panel title\u0004Prefix and suffix": ["Pr\u00e9fixe et Suffixe"],
+      "Input label\u0004Use field label as prefix": ["Utiliser le nom du champ comme pr\u00e9fixe"],
+      "Input label\u0004Prefix": ["Pr\u00e9fixe"],
+      "Input help\u0004Display before the field value.": ["S\u2019affiche avant la valeur."],
+      "Input label\u0004Suffix": ["Suffixe"],
+      "Input help\u0004Display after the field value.": ["S\u2019affiche apr\u00e8s la valeur."],
+      "Input label\u0004Display layout": ["Disposition de l\u2019affichage"],
+      "Input help\u0004Choose basic layout for prefix, value and suffix. This block does not provide any CSS style for the meta field.": [
+        "Choisissez la disposition de base pour le pr\u00e9fixe, la valeur et le suffixe. Ce bloc ne fournit aucun style CSS pour la donn\u00e9e m\u00e9ta."
+      ],
+      "Help message\u0004Fields are registered with <RegisterMetaLink /> and 'show_in_rest' setting is enable.": [
+        "Le champ est d\u00e9clar\u00e9 avec <RegisterMetaLink /> et le param\u00e8tre \u2018show_in_rest\u2019 est activ\u00e9."
+      ],
+      "Help message\u0004Fields are registered with <ACFLink /> and 'Show in REST API' setting is ON.": [
+        "Le champ est d\u00e9clar\u00e9 avec <ACFLink /> et le param\u00e8tre 'Show in REST API' est activ\u00e9."
+      ],
+      "Help message\u0004Fields are registered with <RegisterRestFieldLink />. The 'rest field' and the 'custom field' should be the same name. Or adding a filter for the hook `apply_filters( 'meta_field_block_get_block_content', $content, $attributes, $block, $post_id )` to get value for front end.": [
+        "Le champ est d\u00e9clar\u00e9 avec <RegisterRestFieldLink />. Les param\u00e8tres 'rest field' et 'custom field' doivent avoir la m\u00eame valeur. Ou ajouter le filtre `apply_filters( 'meta_field_block_get_block_content', $content, $attributes, $block, $post_id )` pour r\u00e9cup\u00e9rer la valeur pour le front end."
+      ],
+      "Field type option\u0004Default 'meta'": ["Donn\u00e9e personnalis\u00e9e"],
+      "Field type option\u0004ACF - Advanced Custom Fields": ["ACF - Advanced Custom Fields"],
+      "Field type option\u0004Custom rest field": ["Champ REST personnalis\u00e9"],
+      "Text": ["Texte"],
+      "Display a text field.": ["Affiche une donn\u00e9e de type texte."],
+      "Textarea": ["Block de texte"],
+      "Display a textarea field.": ["Affiche une donn\u00e9e de type block de texte."],
+      "Image": ["Image"],
+      "Display a image field.": ["Affiche une donn\u00e9e de type image."],
+      "Link": ["Lien"],
+      "Display a link field.": ["Affiche une donn\u00e9e de type lien."],
+      "Select": ["Choix"],
+      "Display a select field.": ["Affiche une donn\u00e9e de type choix."],
+      "True/false": ["Vrai/Faux"],
+      "Display a true/false field.": ["Affiche une donn\u00e9e de type vrai/faux."],
+      "Editor": ["Editeur"],
+      "Display a wysiwyg field.": ["Affiche une donn\u00e9e de type wysiwyg."],
+      "Relationship": ["Relation"],
+      "Display a relationship field.": ["Affiche une donn\u00e9e de type relation."],
+      "Post Object": ["Article"],
+      "Display a post object field.": ["Affiche une donn\u00e9e de type article."],
+      "Number": ["Nombre"],
+      "Display a number field.": ["Affiche une donn\u00e9e de type nombre."],
+      "Email": ["Email"],
+      "Display an email field.": ["Affiche une donn\u00e9e de type email."],
+      "URL": ["URL"],
+      "Display a URL field.": ["Affiche une donn\u00e9e de type URL."],
+      "Embed": ["Contenu embarqu\u00e9"],
+      "Display an embed field.": ["Affiche une donn\u00e9e de type contenu embarqu\u00e9."],
+      "Page link": ["Lien de page"],
+      "Display a page link field.": ["Affiche une donn\u00e9e de type lien de page."],
+      "File": ["Fichier"],
+      "Display a file field.": ["Affiche une donn\u00e9e de type fichier."],
+      "This is the Meta Field Block. Please input \"Field Name\"": [
+        "Bloc donn\u00e9e personnalis\u00e9e. Renseigner le nom du champ."
+      ],
+      "No value": ["Aucune valeur"],
+      "Input the field name.": ["Renseigner le nom du champ."],
+      "Suggested values:": ["Suggestions\u00a0:"],
+      "Using the field key as the field name can help the block access the field information without an object id.": [
+        "Utiliser la cl\u00e9 du champ comme nom du champ peut aider a acc\u00e9der aux informations de la donn\u00e9e sans ID d\u2019objet."
+      ]
+    }
+  }
+}

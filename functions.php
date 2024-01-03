@@ -36,6 +36,15 @@ Theme::admin_enqueue_scripts(['admin' => '/css/admin.css']);
 Theme::enqueue_scripts(['style' => '/css/style.css']);
 
 /**
+ * Register blocks
+ */
+Theme::register_blocks([
+  new Block('meta-field-block'),
+]);
+
+Blocks\Meta_Field\Meta_Field_Block::init();
+
+/**
  * Register block styles
  */
 Theme::register_block_styles([

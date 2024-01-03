@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-01-03T10:52:38+00:00\n"
+"POT-Creation-Date: 2024-01-04T11:25:27+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.9.0\n"
 "X-Domain: usm\n"
@@ -34,45 +34,51 @@ msgstr ""
 msgid "https://github.com/marierigal"
 msgstr ""
 
+#: build/blocks/meta-field-block/render.php:37
+#: src/blocks/meta-field-block/render.php:37
+msgid "This data type requires the ACF plugin installed and activated!"
+msgstr ""
+
 #. translators: Label for core/navigation-link block arrow-link style
-#: functions.php:50
+#: functions.php:52
 msgctxt "Block style name"
 msgid "Arrow link"
 msgstr ""
 
 #. translators: Label for sidebar pattern category
-#: functions.php:58
+#: functions.php:60
 msgctxt "Pattern category name"
 msgid "Sidebar"
 msgstr ""
 
 #. translators: Label for sidebar template part area
-#: functions.php:69
+#: functions.php:71
 msgctxt "Part area name"
 msgid "Sidebar"
 msgstr ""
 
 #. translators: Description for sidebar template part area
-#: functions.php:71
+#: functions.php:73
 msgctxt "Part area description"
 msgid "The Sidebar template defines a page area that can be found on the Page (With Sidebar) template."
 msgstr ""
 
 #. translators: The display text for the "true" value of the true_false ACF field type
-#: includes/class-acf-fields.php:264
+#: includes/blocks/meta-field/class-acf-fields.php:261
 msgid "Yes"
 msgstr ""
 
 #. translators: The display text for the "false" value of the true_false ACF field type
-#: includes/class-acf-fields.php:269
+#: includes/blocks/meta-field/class-acf-fields.php:266
 msgid "No"
 msgstr ""
 
-#: includes/class-acf-fields.php:436
+#: includes/blocks/meta-field/class-acf-fields.php:433
 msgid "This data type is not supported! Please contact the author for help."
 msgstr ""
 
-#: includes/class-meta-field-block.php:150
+#: includes/blocks/meta-field/class-meta-field-block.php:137
+#: build/blocks/meta-field-block/index.js:1
 msgid "This data type is not supported!"
 msgstr ""
 
@@ -156,6 +162,453 @@ msgstr ""
 #: patterns/vertical-post.php
 msgctxt "Pattern title"
 msgid "Vertical Post"
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgctxt "Panel title"
+msgid "Block style settings"
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgctxt "Input label"
+msgid "Show block outline"
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgctxt "Input help"
+msgid "Highlight the block on the Editor only."
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgctxt "Ratio option"
+msgid "Original"
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgctxt "Ratio option"
+msgid "Square - 1:1"
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgctxt "Ratio option"
+msgid "Standard - 4:3"
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgctxt "Ratio option"
+msgid "Portrait - 3:4"
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgctxt "Ratio option"
+msgid "Classic - 3:2"
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgctxt "Ratio option"
+msgid "Portrait classic - 2:3"
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgctxt "Ratio option"
+msgid "Wide - 16:9"
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgctxt "Ratio option"
+msgid "High - 9:16"
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgctxt "Ratio option"
+msgid "Custom"
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgctxt "Scale option"
+msgid "Cover"
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgctxt "Input help"
+msgid "Image covers the space evenly."
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgctxt "Scale option"
+msgid "Contain"
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgctxt "Input help"
+msgid "Image is contained without distortion."
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgctxt "Image size option"
+msgid "Thumbnail"
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgctxt "Image size option"
+msgid "Medium"
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgctxt "Image size option"
+msgid "Large"
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgctxt "Image size option"
+msgid "Full Size"
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgctxt "Panel title"
+msgid "Image style settings"
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgctxt "Input label"
+msgid "Ratio"
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgctxt "Input label"
+msgid "Apply"
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgctxt "Input label"
+msgid "Width"
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgctxt "Input placeholder"
+msgid "Auto"
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgctxt "Input label"
+msgid "Height"
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgctxt "Input label"
+msgid "Resolution"
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgctxt "Input help"
+msgid "Choose a size for the source image."
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgctxt "Panel title"
+msgid "Meta field settings"
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgctxt "Input label"
+msgid "Field type"
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgctxt "Input help"
+msgid "Choose a field type"
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgctxt "Input label"
+msgid "Field name"
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgctxt "Input label"
+msgid "Hide block if the value is empty"
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgctxt "Input label"
+msgid "Empty message"
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgctxt "Input help"
+msgid "Display this text if the value is empty."
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgctxt "Input label"
+msgid "Change tag name"
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgctxt "Display layout option"
+msgid "Inline block"
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgctxt "Display layout option"
+msgid "Block"
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgctxt "Display layout option"
+msgid "Auto"
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgctxt "Panel title"
+msgid "Prefix and suffix"
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgctxt "Input label"
+msgid "Use field label as prefix"
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgctxt "Input label"
+msgid "Prefix"
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgctxt "Input help"
+msgid "Display before the field value."
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgctxt "Input label"
+msgid "Suffix"
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgctxt "Input help"
+msgid "Display after the field value."
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgctxt "Input label"
+msgid "Display layout"
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgctxt "Input help"
+msgid "Choose basic layout for prefix, value and suffix. This block does not provide any CSS style for the meta field."
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgctxt "Help message"
+msgid "Fields are registered with <RegisterMetaLink /> and 'show_in_rest' setting is enable."
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgctxt "Help message"
+msgid "Fields are registered with <ACFLink /> and 'Show in REST API' setting is ON."
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgctxt "Help message"
+msgid "Fields are registered with <RegisterRestFieldLink />. The 'rest field' and the 'custom field' should be the same name. Or adding a filter for the hook `apply_filters( 'meta_field_block_get_block_content', $content, $attributes, $block, $post_id )` to get value for front end."
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgctxt "Field type option"
+msgid "Default 'meta'"
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgctxt "Field type option"
+msgid "ACF - Advanced Custom Fields"
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgctxt "Field type option"
+msgid "Custom rest field"
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgid "Text"
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgid "Display a text field."
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgid "Textarea"
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgid "Display a textarea field."
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgid "Image"
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgid "Display a image field."
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgid "Link"
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgid "Display a link field."
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgid "Select"
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgid "Display a select field."
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgid "True/false"
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgid "Display a true/false field."
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgid "Editor"
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgid "Display a wysiwyg field."
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgid "Relationship"
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgid "Display a relationship field."
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgid "Post Object"
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgid "Display a post object field."
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgid "Number"
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgid "Display a number field."
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgid "Email"
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgid "Display an email field."
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgid "URL"
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgid "Display a URL field."
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgid "Embed"
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgid "Display an embed field."
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgid "Page link"
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgid "Display a page link field."
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgid "File"
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgid "Display a file field."
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgid "This is the Meta Field Block. Please input \"Field Name\""
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgid "No value"
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgid "Input the field name."
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgid "Suggested values:"
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgid "Using the field key as the field name can help the block access the field information without an object id."
+msgstr ""
+
+#: build/blocks/meta-field-block/block.json
+#: src/blocks/meta-field-block/block.json
+msgctxt "block title"
+msgid "Meta Field Block"
+msgstr ""
+
+#: build/blocks/meta-field-block/block.json
+#: src/blocks/meta-field-block/block.json
+msgctxt "block description"
+msgid "Display a meta field or a custom field as a block, supporting ACF fields."
+msgstr ""
+
+#: build/blocks/meta-field-block/block.json
+#: src/blocks/meta-field-block/block.json
+msgctxt "block keyword"
+msgid "meta"
+msgstr ""
+
+#: build/blocks/meta-field-block/block.json
+#: src/blocks/meta-field-block/block.json
+msgctxt "block keyword"
+msgid "custom"
+msgstr ""
+
+#: build/blocks/meta-field-block/block.json
+#: src/blocks/meta-field-block/block.json
+msgctxt "block keyword"
+msgid "acf"
+msgstr ""
+
+#: build/blocks/meta-field-block/block.json
+#: src/blocks/meta-field-block/block.json
+msgctxt "block keyword"
+msgid "field"
+msgstr ""
+
+#: build/blocks/meta-field-block/block.json
+#: src/blocks/meta-field-block/block.json
+msgctxt "block keyword"
+msgid "metadata"
 msgstr ""
 
 #: theme.json
