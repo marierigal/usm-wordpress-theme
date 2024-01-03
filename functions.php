@@ -20,7 +20,10 @@ define('USM_ASSETS', esc_url(get_stylesheet_directory_uri()) . '/' . Theme::ASSE
 /**
  * Theme setup
  */
-Theme::setup();
+Theme::setup([
+  'advanced-custom-fields-pro/acf.php'               => 'Advanced Custom Fields PRO',
+  'capability-manager-enhanced/capsman-enhanced.php' => 'PublishPress Capabilities',
+]);
 
 /**
  * Enqueue admin scripts and styles
