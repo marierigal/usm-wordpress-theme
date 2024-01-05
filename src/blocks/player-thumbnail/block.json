@@ -1,0 +1,17 @@
+{
+  "name": "usm/player-thumbnail",
+  "title": "Player thumbnail",
+  "description": "Display a player thumbnail with name and position",
+  "category": "widgets",
+  "icon": "groups",
+  "keywords": [],
+  "supports": {
+    "html": false
+  },
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "render.php"
+  },
+  "textdomain": "usm",
+  "style": "file:./style.css"
+}

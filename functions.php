@@ -40,6 +40,7 @@ Theme::enqueue_scripts(['style' => '/css/style.css']);
  */
 Theme::register_blocks([
   new Block('meta-field-block'),
+  new Block('player-thumbnail'),
 ]);
 
 Blocks\Meta_Field\Meta_Field_Block::init();
