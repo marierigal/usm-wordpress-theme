@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-01-04T11:25:27+00:00\n"
+"POT-Creation-Date: 2024-01-05T20:02:41+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.9.0\n"
 "X-Domain: usm\n"
@@ -96,6 +96,352 @@ msgstr ""
 #: includes/class-plugin-manager.php:74
 msgctxt "Plugin action"
 msgid "install"
+msgstr ""
+
+#: includes/post-types/class-player.php:61
+#: includes/post-types/class-player.php:252
+msgctxt "Admin column title"
+msgid "Role"
+msgstr ""
+
+#. translators: General name for the post type, usually plural. Default is ‘Posts’ / ‘Pages’.
+#. translators: Label for the menu name. Default is the same as name.
+#: includes/post-types/class-player.php:106
+#: includes/post-types/class-player.php:140
+msgctxt "Post type label"
+msgid "Players"
+msgstr ""
+
+#. translators: Name for one object of this post type. Default is ‘Post’ / ‘Page’.
+#: includes/post-types/class-player.php:108
+msgctxt "Post type label"
+msgid "Player"
+msgstr ""
+
+#. translators: Label for adding a new item. Default is ‘Add New Post’ / ‘Add New Page’.
+#. translators: Label for adding a new singular item. Default is ‘Add New Post’ / ‘Add New Page’.
+#: includes/post-types/class-player.php:110
+#: includes/post-types/class-player.php:112
+msgctxt "Post type label"
+msgid "Add a player"
+msgstr ""
+
+#. translators: Label for editing a singular item. Default is ‘Edit Post’ / ‘Edit Page’.
+#: includes/post-types/class-player.php:114
+msgctxt "Post type label"
+msgid "Edit player"
+msgstr ""
+
+#. translators: Label for the new item page title. Default is ‘New Post’ / ‘New Page’.
+#: includes/post-types/class-player.php:116
+msgctxt "Post type label"
+msgid "New player"
+msgstr ""
+
+#. translators: Label for viewing a singular item. Default is ‘View Post’ / ‘View Page’.
+#: includes/post-types/class-player.php:118
+msgctxt "Post type label"
+msgid "View player"
+msgstr ""
+
+#. translators: Label for viewing post type archives. Default is ‘View Posts’ / ‘View Pages’.
+#: includes/post-types/class-player.php:120
+msgctxt "Post type label"
+msgid "View players"
+msgstr ""
+
+#. translators: Label for searching plural items. Default is ‘Search Posts’ / ‘Search Pages’.
+#: includes/post-types/class-player.php:122
+msgctxt "Post type label"
+msgid "Search players"
+msgstr ""
+
+#. translators: Label used when no items are found. Default is ‘No posts found’ / ‘No pages found’.
+#: includes/post-types/class-player.php:124
+msgctxt "Post type label"
+msgid "No player found."
+msgstr ""
+
+#. translators: Label used when no items are in the Trash. Default is ‘No posts found in Trash’ / ‘No pages found in Trash’.
+#: includes/post-types/class-player.php:126
+msgctxt "Post type label"
+msgid "No player found in trash."
+msgstr ""
+
+#. translators: Label used to prefix parents of hierarchical items. Not used on non-hierarchical post types. Default is ‘Parent Page:’.
+#: includes/post-types/class-player.php:128
+msgctxt "Post type label"
+msgid "Parent player:"
+msgstr ""
+
+#. translators: Label to signify all items in a submenu link. Default is ‘All Posts’ / ‘All Pages’.
+#: includes/post-types/class-player.php:130
+msgctxt "Post type label"
+msgid "All players"
+msgstr ""
+
+#. translators: Label for archives in nav menus. Default is ‘Post Archives’ / ‘Page Archives’.
+#: includes/post-types/class-player.php:132
+msgctxt "Post type label"
+msgid "Player archives"
+msgstr ""
+
+#. translators: Label for the attributes meta box. Default is ‘Post Attributes’ / ‘Page Attributes’.
+#: includes/post-types/class-player.php:134
+msgctxt "Post type label"
+msgid "Player attributes"
+msgstr ""
+
+#. translators: Label for the media frame button. Default is ‘Insert into post’ / ‘Insert into page’.
+#: includes/post-types/class-player.php:136
+msgctxt "Post type label"
+msgid "Add to player"
+msgstr ""
+
+#. translators: Label for the media frame filter. Default is ‘Uploaded to this post’ / ‘Uploaded to this page’.
+#: includes/post-types/class-player.php:138
+msgctxt "Post type label"
+msgid "Uploaded to this player"
+msgstr ""
+
+#. translators: Label for the table views hidden heading. Default is ‘Filter posts list’ / ‘Filter pages list’.
+#: includes/post-types/class-player.php:142
+msgctxt "Post type label"
+msgid "Filter the list of players"
+msgstr ""
+
+#. translators: Label for the date filter in list tables. Default is ‘Filter by date’.
+#: includes/post-types/class-player.php:144
+msgctxt "Post type label"
+msgid "Filter players by date"
+msgstr ""
+
+#. translators: Label for the table pagination hidden heading. Default is ‘Posts list navigation’ / ‘Pages list navigation’.
+#: includes/post-types/class-player.php:146
+msgctxt "Post type label"
+msgid "Navigation in the list of players"
+msgstr ""
+
+#. translators: Label for the table hidden heading. Default is ‘Posts list’ / ‘Pages list’.
+#: includes/post-types/class-player.php:148
+msgctxt "Post type label"
+msgid "List of players"
+msgstr ""
+
+#. translators: Label used when an item is published. Default is ‘Post published.’ / ‘Page published.’
+#: includes/post-types/class-player.php:150
+msgctxt "Post type label"
+msgid "Player published."
+msgstr ""
+
+#. translators: Label used when an item is published with private visibility. Default is ‘Post published privately.’ / ‘Page published privately.’
+#: includes/post-types/class-player.php:152
+msgctxt "Post type label"
+msgid "Player published privately."
+msgstr ""
+
+#. translators: Label used when an item is switched to a draft. Default is ‘Post reverted to draft.’ / ‘Page reverted to draft.’
+#: includes/post-types/class-player.php:154
+msgctxt "Post type label"
+msgid "Player reverted to draft."
+msgstr ""
+
+#. translators: Label used when an item is moved to Trash. Default is ‘Post trashed.’ / ‘Page trashed.’
+#: includes/post-types/class-player.php:156
+msgctxt "Post type label"
+msgid "Player moved to trash."
+msgstr ""
+
+#. translators: Label used when an item is scheduled for publishing. Default is ‘Post scheduled.’ / ‘Page scheduled.’
+#: includes/post-types/class-player.php:158
+msgctxt "Post type label"
+msgid "Player scheduled."
+msgstr ""
+
+#. translators: Label used when an item is updated. Default is ‘Post updated.’ / ‘Page updated.’
+#: includes/post-types/class-player.php:160
+msgctxt "Post type label"
+msgid "Player updated."
+msgstr ""
+
+#. translators: Title for a navigation link block variation. Default is ‘Post Link’ / ‘Page Link’.
+#: includes/post-types/class-player.php:162
+msgctxt "Post type label"
+msgid "Player link"
+msgstr ""
+
+#. translators: Description for a navigation link block variation. Default is ‘A link to a post.’ / ‘A link to a page.’
+#: includes/post-types/class-player.php:164
+msgctxt "Post type label"
+msgid "A link to a player."
+msgstr ""
+
+#: includes/post-types/class-player.php:188
+msgctxt "Role option"
+msgid "All roles"
+msgstr ""
+
+#: includes/post-types/class-player.php:191
+msgctxt "Role option"
+msgid "Player"
+msgstr ""
+
+#: includes/post-types/class-player.php:192
+msgctxt "Role option"
+msgid "Staff"
+msgstr ""
+
+#: includes/post-types/class-player.php:245
+msgctxt "Admin column title"
+msgid "Position"
+msgstr ""
+
+#: includes/post-types/class-player.php:246
+msgctxt "Admin column label"
+msgid "Table sorted by position."
+msgstr ""
+
+#: includes/post-types/class-player.php:253
+msgctxt "Admin column label"
+msgid "Table sorted by role."
+msgstr ""
+
+#. translators: General name for the taxonomy, usually plural. The same as and overridden by $tax->label. Default 'Tags'/'Categories'.
+#: includes/taxonomies/class-position.php:33
+msgctxt "Taxonomy label"
+msgid "Positions"
+msgstr ""
+
+#. translators: Singular name for the taxonomy. Default 'Tag'/'Category'.
+#: includes/taxonomies/class-position.php:35
+msgctxt "Taxonomy label"
+msgid "Position"
+msgstr ""
+
+#. translators: Default ‘Search Tags'/'Search Categories’.
+#: includes/taxonomies/class-position.php:37
+msgctxt "Taxonomy label"
+msgid "Search Positions"
+msgstr ""
+
+#. translators: Default ‘Popular Tags'/'Popular Categories’.
+#: includes/taxonomies/class-position.php:39
+msgctxt "Taxonomy label"
+msgid "Popular Positions"
+msgstr ""
+
+#. translators: Default ‘All Tags'/'All Categories’.
+#: includes/taxonomies/class-position.php:41
+msgctxt "Taxonomy label"
+msgid "All Positions"
+msgstr ""
+
+#. translators: This label is only used for hierarchical taxonomies. Default ‘Parent Category’.
+#: includes/taxonomies/class-position.php:43
+msgctxt "Taxonomy label"
+msgid "Parent Position"
+msgstr ""
+
+#. translators: The same as parent_item, but with colon : in the end.
+#: includes/taxonomies/class-position.php:45
+msgctxt "Taxonomy label"
+msgid "Parent Position:"
+msgstr ""
+
+#. translators: Default ‘Edit Tag'/'Edit Category’.
+#: includes/taxonomies/class-position.php:47
+msgctxt "Taxonomy label"
+msgid "Edit Position"
+msgstr ""
+
+#. translators: Default ‘View Tag'/'View Category’.
+#: includes/taxonomies/class-position.php:49
+msgctxt "Taxonomy label"
+msgid "View Position"
+msgstr ""
+
+#. translators: Default ‘Update Tag'/'Update Category’.
+#: includes/taxonomies/class-position.php:51
+msgctxt "Taxonomy label"
+msgid "Update Position"
+msgstr ""
+
+#. translators: Default ‘Add New Tag'/'Add New Category’.
+#: includes/taxonomies/class-position.php:53
+msgctxt "Taxonomy label"
+msgid "Add New Position"
+msgstr ""
+
+#. translators: Default ‘New Tag Name'/'New Category Name’.
+#: includes/taxonomies/class-position.php:55
+msgctxt "Taxonomy label"
+msgid "New Position Name"
+msgstr ""
+
+#. translators: This label is only used for non-hierarchical taxonomies. Default ‘Separate tags with commas’, used in the meta box.
+#: includes/taxonomies/class-position.php:57
+msgctxt "Taxonomy label"
+msgid "Separate positions with commas"
+msgstr ""
+
+#. translators: This label is only used for non-hierarchical taxonomies. Default ‘Add or remove tags’, used in the meta box when JavaScript is disabled.
+#: includes/taxonomies/class-position.php:59
+msgctxt "Taxonomy label"
+msgid "Add or remove positions"
+msgstr ""
+
+#. translators: This label is only used on non-hierarchical taxonomies. Default ‘Choose from the most used tags’, used in the meta box.
+#: includes/taxonomies/class-position.php:61
+msgctxt "Taxonomy label"
+msgid "Choose from the most used positions"
+msgstr ""
+
+#. translators: Default ‘No tags found'/'No categories found’, used in the meta box and taxonomy list table.
+#: includes/taxonomies/class-position.php:63
+msgctxt "Taxonomy label"
+msgid "No positions found."
+msgstr ""
+
+#. translators: Default ‘No tags'/'No categories’, used in the posts and media list tables.
+#: includes/taxonomies/class-position.php:65
+msgctxt "Taxonomy label"
+msgid "No positions"
+msgstr ""
+
+#. translators: This label is only used for hierarchical taxonomies. Default ‘Filter by category’, used in the posts list table.
+#: includes/taxonomies/class-position.php:67
+msgctxt "Taxonomy label"
+msgid "Filter by position"
+msgstr ""
+
+#. translators: Label for the table pagination hidden heading. Default 'Tags list navigation'/'Categories list navigation'.
+#: includes/taxonomies/class-position.php:69
+msgctxt "Taxonomy label"
+msgid "Positions list navigation"
+msgstr ""
+
+#. translators: Label for the table hidden heading. Default 'Tags list'/'Categories list'.
+#: includes/taxonomies/class-position.php:71
+msgctxt "Taxonomy label"
+msgid "Positions list"
+msgstr ""
+
+#. translators: Label displayed after a term has been updated. Default '&larr; Go to Tags'/'&larr; Go to Categories'
+#: includes/taxonomies/class-position.php:73
+msgctxt "Taxonomy label"
+msgid "&larr; Go to Positions"
+msgstr ""
+
+#. translators: Used in the block editor. Title for a navigation link block variation. Default ‘Tag Link'/'Category Link’.
+#: includes/taxonomies/class-position.php:75
+msgctxt "Taxonomy label"
+msgid "Position Link"
+msgstr ""
+
+#. translators: Used in the block editor. Description for a navigation link block variation. Default ‘A link to a tag'/'A link to a category’.
+#: includes/taxonomies/class-position.php:77
+msgctxt "Taxonomy label"
+msgid "A link to a position"
 msgstr ""
 
 #: patterns/404.php
