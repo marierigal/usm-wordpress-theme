@@ -13,5 +13,5 @@
     "renderTemplate": "render.php"
   },
   "textdomain": "usm",
-  "style": "file:./style.css"
+  "style": "file:./style-index.css"
 }
