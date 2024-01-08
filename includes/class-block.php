@@ -15,7 +15,7 @@ readonly class Block
    */
   public function register(): void
   {
-    $block_type = register_block_type(get_theme_file_path() . '/build/blocks/' . $this->name . '/block.json');
+    $block_type = register_block_type(get_theme_file_path("build/blocks/$this->name/block.json"));
     if (!$block_type) return;
 
     foreach ($block_type->editor_script_handles as $handle) {

@@ -22,7 +22,7 @@ class Plugin_Manager
     $missing_plugins_list = '<ul style="list-style:inherit;padding-left:2rem;">' . implode(
         '',
         array_map(
-          fn(string $plugin_key) => self::generate_plugin_blabla($plugin_key, $recommended_plugins[$plugin_key]),
+          fn(string $plugin_key) => self::generate_plugin_HTML($plugin_key, $recommended_plugins[$plugin_key]),
           $missing_plugins,
         )
       ) . '</ul>';
@@ -63,7 +63,7 @@ class Plugin_Manager
     );
   }
 
-  protected static function generate_plugin_blabla(string $plugin_key, string $plugin_name): string
+  protected static function generate_plugin_HTML(string $plugin_key, string $plugin_name): string
   {
     $link = self::is_plugin_installed($plugin_key)
       ? self::generate_activate_link($plugin_key)

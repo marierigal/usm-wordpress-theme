@@ -46,5 +46,8 @@ Source: http://www.microsoft.com/typography/ctfonts
 Advanced Custom Fields PRO
 https://www.advancedcustomfields.com/pro/
 
+Font Awesome
+https://wordpress.org/plugins/font-awesome/
+
 PublishPress Capabilities
 https://wordpress.org/plugins/capability-manager-enhanced/
