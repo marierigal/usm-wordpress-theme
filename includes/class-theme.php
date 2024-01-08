@@ -38,6 +38,20 @@ class Theme
   }
 
   /**
+   * Enqueue a script file
+   */
+  public static function enqueue_script(string $handle, string $path = '', array $deps = [], bool|null|string $version = null, array|bool $args = []): void
+  {
+    wp_enqueue_script(
+      self::DOMAIN . '-' . sanitize_title($handle),
+      self::get_file_uri($path),
+      $deps,
+      $version ?? self::get_version(),
+      $args
+    );
+  }
+
+  /**
    * Enqueue admin and front scripts and styles
    *
    * @param string[] $styles  Styles to enqueue
@@ -62,6 +76,20 @@ class Theme
         self::enqueue_script($handle, $path);
       }
     });
+  }
+
+  /**
+   * Enqueue a stylesheet
+   */
+  public static function enqueue_style(string $handle, string $path = '', array $deps = [], bool|null|string $version = null, string $media = 'all'): void
+  {
+    wp_enqueue_style(
+      self::DOMAIN . '-' . sanitize_title($handle),
+      self::get_file_uri($path),
+      $deps,
+      $version ?? self::get_version(),
+      $media
+    );
   }
 
   /**
@@ -95,6 +123,20 @@ class Theme
     add_action('init', function () use ($blocks): void {
       foreach ($blocks as $block) {
         $block->register();
+      }
+    });
+  }
+
+  /**
+   * Register format types
+   *
+   * @param Format_Type[] $format_types
+   */
+  public static function register_format_types(array $format_types): void
+  {
+    add_action('enqueue_block_editor_assets', function () use ($format_types): void {
+      foreach ($format_types as $format_type) {
+        $format_type->register();
       }
     });
   }
@@ -174,43 +216,13 @@ class Theme
   }
 
   /**
-   * Enqueue a script file
-   */
-  private static function enqueue_script(string $handle, string $path = '', array $deps = []): void
-  {
-    if (!preg_match('/^https?:\/\//', $path)) {
-      $path = get_theme_file_uri(self::ASSETS_DIRECTORY . $path);
-    }
-
-    wp_enqueue_script(
-      self::DOMAIN . '-' . sanitize_title($handle),
-      $path,
-      $deps,
-      self::get_version()
-    );
-  }
-
-  /**
-   * Enqueue a stylesheet
-   */
-  private static function enqueue_style(string $handle, string $path = '', array $deps = []): void
-  {
-    wp_enqueue_style(
-      self::DOMAIN . '-' . sanitize_title($handle),
-      self::get_file_uri($path),
-      $deps,
-      self::get_version()
-    );
-  }
-
-  /**
    * Get file URI
    */
   private static function get_file_uri(string $path): string
   {
     if (preg_match('/^https?:\/\//', $path)) return $path;
 
-    return get_theme_file_uri(self::ASSETS_DIRECTORY . '/' . ltrim($path, '/'));
+    return get_theme_file_uri($path);
   }
 
   /**

@@ -1,0 +1,30 @@
+/**
+ * Icon Format
+ */
+
+.usm-icon-format {
+  &__popover {
+    &__form {
+      padding: 8px;
+      min-width: 180px;
+
+      .components-toggle-control {
+        margin: 16px 0 0;
+      }
+
+      &__actions {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 16px;
+        gap: 16px;
+      }
+
+      button {
+        display: block;
+        flex: 1;
+      }
+
+    }
+  }
+}

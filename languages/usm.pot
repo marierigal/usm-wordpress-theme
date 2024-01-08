@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-01-09T13:35:17+00:00\n"
+"POT-Creation-Date: 2024-01-09T13:39:58+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.9.0\n"
 "X-Domain: usm\n"
@@ -40,25 +40,25 @@ msgid "This data type requires the ACF plugin installed and activated!"
 msgstr ""
 
 #. translators: Label for core/navigation-link block arrow-link style
-#: functions.php:53
+#: functions.php:61
 msgctxt "Block style name"
 msgid "Arrow link"
 msgstr ""
 
 #. translators: Label for sidebar pattern category
-#: functions.php:61
+#: functions.php:69
 msgctxt "Pattern category name"
 msgid "Sidebar"
 msgstr ""
 
 #. translators: Label for sidebar template part area
-#: functions.php:72
+#: functions.php:80
 msgctxt "Part area name"
 msgid "Sidebar"
 msgstr ""
 
 #. translators: Description for sidebar template part area
-#: functions.php:74
+#: functions.php:82
 msgctxt "Part area description"
 msgid "The Sidebar template defines a page area that can be found on the Page (With Sidebar) template."
 msgstr ""
@@ -913,6 +913,141 @@ msgstr ""
 
 #: build/blocks/meta-field-block/index.js:1
 msgid "Using the field key as the field name can help the block access the field information without an object id."
+msgstr ""
+
+#: build/format-types/icon/index.js:1
+msgctxt "Format title"
+msgid "Icon"
+msgstr ""
+
+#: build/format-types/icon/index.js:1
+msgctxt "FA icon style"
+msgid "Solid"
+msgstr ""
+
+#: build/format-types/icon/index.js:1
+msgctxt "FA icon style"
+msgid "Regular"
+msgstr ""
+
+#: build/format-types/icon/index.js:1
+msgctxt "FA icon style"
+msgid "Brands"
+msgstr ""
+
+#: build/format-types/icon/index.js:1
+msgctxt "FA icon size"
+msgid "2XS"
+msgstr ""
+
+#: build/format-types/icon/index.js:1
+msgctxt "FA icon size"
+msgid "XS"
+msgstr ""
+
+#: build/format-types/icon/index.js:1
+msgctxt "FA icon size"
+msgid "Small"
+msgstr ""
+
+#: build/format-types/icon/index.js:1
+msgctxt "FA icon size"
+msgid "Medium"
+msgstr ""
+
+#: build/format-types/icon/index.js:1
+msgctxt "FA icon size"
+msgid "Large"
+msgstr ""
+
+#: build/format-types/icon/index.js:1
+msgctxt "FA icon size"
+msgid "XL"
+msgstr ""
+
+#: build/format-types/icon/index.js:1
+msgctxt "FA icon size"
+msgid "2XL"
+msgstr ""
+
+#: build/format-types/icon/index.js:1
+msgctxt "FA icon size"
+msgid "1x"
+msgstr ""
+
+#: build/format-types/icon/index.js:1
+msgctxt "FA icon size"
+msgid "2x"
+msgstr ""
+
+#: build/format-types/icon/index.js:1
+msgctxt "FA icon size"
+msgid "3x"
+msgstr ""
+
+#: build/format-types/icon/index.js:1
+msgctxt "FA icon size"
+msgid "4x"
+msgstr ""
+
+#: build/format-types/icon/index.js:1
+msgctxt "FA icon size"
+msgid "5x"
+msgstr ""
+
+#: build/format-types/icon/index.js:1
+msgctxt "FA icon size"
+msgid "6x"
+msgstr ""
+
+#: build/format-types/icon/index.js:1
+msgctxt "FA icon size"
+msgid "7x"
+msgstr ""
+
+#: build/format-types/icon/index.js:1
+msgctxt "FA icon size"
+msgid "8x"
+msgstr ""
+
+#: build/format-types/icon/index.js:1
+msgctxt "FA icon size"
+msgid "9x"
+msgstr ""
+
+#: build/format-types/icon/index.js:1
+msgctxt "FA icon size"
+msgid "10x"
+msgstr ""
+
+#: build/format-types/icon/index.js:1
+msgctxt "Input label"
+msgid "Style"
+msgstr ""
+
+#: build/format-types/icon/index.js:1
+msgctxt "Input label"
+msgid "Icon"
+msgstr ""
+
+#: build/format-types/icon/index.js:1
+msgctxt "Input label"
+msgid "Size"
+msgstr ""
+
+#: build/format-types/icon/index.js:1
+msgctxt "Input label"
+msgid "Fixed width"
+msgstr ""
+
+#: build/format-types/icon/index.js:1
+msgctxt "Button label"
+msgid "Remove"
+msgstr ""
+
+#: build/format-types/icon/index.js:1
+msgctxt "Button label"
+msgid "Apply"
 msgstr ""
 
 #: build/blocks/meta-field-block/block.json

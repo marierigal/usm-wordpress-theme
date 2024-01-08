@@ -22,18 +22,19 @@ define('USM_ASSETS', esc_url(get_stylesheet_directory_uri()) . '/' . Theme::ASSE
  */
 Theme::setup([
   'advanced-custom-fields-pro/acf.php'               => 'Advanced Custom Fields PRO',
+  'font-awesome/index.php'                           => 'Font Awesome',
   'capability-manager-enhanced/capsman-enhanced.php' => 'PublishPress Capabilities',
 ]);
 
 /**
  * Enqueue admin scripts and styles
  */
-Theme::admin_enqueue_scripts(['admin' => '/css/admin.css']);
+Theme::admin_enqueue_scripts(['admin' => 'assets/css/admin.css']);
 
 /**
  * Enqueue front scripts and styles
  */
-Theme::enqueue_scripts(['style' => '/css/style.css']);
+Theme::enqueue_scripts(['style' => 'assets/css/style.css']);
 
 /**
  * Register blocks
@@ -44,6 +45,13 @@ Theme::register_blocks([
 ]);
 
 Blocks\Meta_Field\Meta_Field_Block::init();
+
+/**
+ * Register format types
+ */
+Theme::register_format_types([
+  new Format_Type('icon'),
+]);
 
 /**
  * Register block styles
