@@ -4,12 +4,9 @@
     "project": "tsconfig.json",
     "sourceType": "module"
   },
-  "plugins": ["@typescript-eslint"],
   "extends": [
-    "plugin:@typescript-eslint/recommended",
     "plugin:import/errors",
     "plugin:import/warnings",
-    "plugin:import/typescript",
     "prettier"
   ],
   "root": true,
@@ -17,34 +14,46 @@
     "node": true,
     "jest": true
   },
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx"],
+      "plugins": ["@typescript-eslint"],
+      "extends": [
+        "plugin:@typescript-eslint/recommended",
+        "plugin:import/typescript"
+      ],
+      "rules": {
+        "@typescript-eslint/ban-ts-comment": [
+          "error",
+          {
+            "ts-expect-error": {
+              "descriptionFormat": "^: TS\\d+ because .+$"
+            },
+            "ts-ignore": true,
+            "ts-nocheck": true,
+            "ts-check": false
+          }
+        ],
+        "@typescript-eslint/explicit-function-return-type": "error",
+        "@typescript-eslint/explicit-module-boundary-types": "error",
+        "@typescript-eslint/interface-name-prefix": "off",
+        "@typescript-eslint/member-delimiter-style": "error",
+        "@typescript-eslint/no-explicit-any": "off",
+        "@typescript-eslint/no-unused-vars": "error",
+        "@typescript-eslint/explicit-member-accessibility": [
+          "error",
+          {
+            "accessibility": "explicit",
+            "overrides": {
+              "constructors": "no-public"
+            }
+          }
+        ],
+        "@typescript-eslint/member-ordering": "error"
+      }
+    }
+  ],
   "rules": {
-    "@typescript-eslint/ban-ts-comment": [
-      "error",
-      {
-        "ts-expect-error": {
-          "descriptionFormat": "^: TS\\d+ because .+$"
-        },
-        "ts-ignore": true,
-        "ts-nocheck": true,
-        "ts-check": false
-      }
-    ],
-    "@typescript-eslint/explicit-function-return-type": "error",
-    "@typescript-eslint/explicit-module-boundary-types": "error",
-    "@typescript-eslint/interface-name-prefix": "off",
-    "@typescript-eslint/member-delimiter-style": "error",
-    "@typescript-eslint/no-explicit-any": "off",
-    "@typescript-eslint/no-unused-vars": "error",
-    "@typescript-eslint/explicit-member-accessibility": [
-      "error",
-      {
-        "accessibility": "explicit",
-        "overrides": {
-          "constructors": "no-public"
-        }
-      }
-    ],
-    "@typescript-eslint/member-ordering": "error",
     "import/no-useless-path-segments": [
       "error", {
         "noUselessIndex": true
