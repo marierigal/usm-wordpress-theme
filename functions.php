@@ -46,6 +46,13 @@ Theme::register_blocks([
 Blocks\Meta_Field\Meta_Field_Block::init();
 
 /**
+ * Register format types
+ */
+Theme::register_format_types([
+  new Format_Type('icon'),
+]);
+
+/**
  * Register block styles
  */
 Theme::register_block_styles([

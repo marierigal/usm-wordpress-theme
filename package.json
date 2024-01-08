@@ -54,6 +54,7 @@
     "@wordpress/editor": "^13.25.0",
     "@wordpress/element": "^5.25.0",
     "@wordpress/i18n": "^4.48.0",
+    "@wordpress/rich-text": "^6.25.0",
     "dompurify": "^3.0.6",
     "lodash": "^4.17.21",
     "react": "^18.2.0",

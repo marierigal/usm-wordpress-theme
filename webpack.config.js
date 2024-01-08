@@ -63,6 +63,8 @@ const defaultConfig = {
     ...getEntriesFromPath('assets', 'scss'),
     // ACF blocks stylesheets entry points
     ...getAcfBlockEntries('src'),
+    // Format types entry points
+    ...getEntriesFromPath('src', 'ts', 'format-types/**/index'),
   },
   plugins: [
     // Default plugins
