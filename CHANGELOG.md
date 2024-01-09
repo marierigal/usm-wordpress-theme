@@ -1,3 +1,29 @@
+# [2.0.0](https://github.com/marierigal/usm-wordpress-theme/compare/v1.1.0...v2.0.0) (2024-01-09)
+
+
+### chore
+
+* upgrade PHP version to 8.2 ([e4bc6cd](https://github.com/marierigal/usm-wordpress-theme/commit/e4bc6cd85ba45fbaebd48892c5cf38c7e563ceee))
+
+
+### Features
+
+* **blocks:** add Meta Field block ([9ef60b6](https://github.com/marierigal/usm-wordpress-theme/commit/9ef60b62e9ea514bd2446d41ae52c26a4f235ab1))
+* **blocks:** add Player thumbnail block ([53d946d](https://github.com/marierigal/usm-wordpress-theme/commit/53d946d86406c1d63988ee729ff1f1d10a144a72))
+* **blocks:** add Sponsors slider block ([17b153a](https://github.com/marierigal/usm-wordpress-theme/commit/17b153a60a457d7553c5e3e3b91d07db23e12010))
+* **format-types:** add Icon format ([6627a9f](https://github.com/marierigal/usm-wordpress-theme/commit/6627a9f2adf03a02ade97801fec91a907ce503d7))
+* **i18n:** update translations ([cd15ecc](https://github.com/marierigal/usm-wordpress-theme/commit/cd15ecc7ac88c51f74c509623b07d2f3fe67c14b))
+* **patterns:** fix pattern's categories ([6e02b64](https://github.com/marierigal/usm-wordpress-theme/commit/6e02b64427cfbf88f4bee87069a6fb2eeee7965a))
+* **post-types:** add Player post type ([b4f6d66](https://github.com/marierigal/usm-wordpress-theme/commit/b4f6d663fe73fe3eae66607cc49fb530cfbe0365))
+* **post-types:** add Sponsor post type ([7447919](https://github.com/marierigal/usm-wordpress-theme/commit/7447919837b7612300922b67be48113b8d1486bc))
+* **taxonomies:** allow to order taxonomies by metadata ([d7ecf1c](https://github.com/marierigal/usm-wordpress-theme/commit/d7ecf1c235fa1cf705d6e2836506cfd2715b6482))
+* **theme:** add recommended plugins ([17e5fba](https://github.com/marierigal/usm-wordpress-theme/commit/17e5fba88989c2bc4463218caffdb496f8e0d8fc))
+
+
+### BREAKING CHANGES
+
+* Require PHP 8.2
+
 # [1.1.0](https://github.com/marierigal/usm-wordpress-theme/compare/v1.0.0...v1.1.0) (2023-12-30)
 
 
