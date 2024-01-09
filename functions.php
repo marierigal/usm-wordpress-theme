@@ -95,5 +95,6 @@ Post_Types\Sponsor::init();
 /**
  * Custom taxonomies
  */
+Taxonomies::init();
 Taxonomies\Position::init();
 Taxonomies\Engagement_Level::init();
