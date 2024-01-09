@@ -1,0 +1,98 @@
+.usm-sponsors-slider {
+  &.usm-is-hidden {
+    opacity: 0.5;
+  }
+
+  &__slider {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    &__slide {
+      padding: 0 8px;
+      max-width: 300px;
+      text-align: center;
+
+      &__link {
+        display: block;
+        color: inherit;
+        text-decoration: none;
+
+        &:hover {
+          color: inherit;
+          text-decoration: none;
+        }
+      }
+
+      &__thumbnail {
+        height: 200px;
+
+        &__image {
+          opacity: 1;
+          transition: opacity 200ms ease-in-out;
+          max-width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+
+      &__name {
+        margin: 16px 0 0;
+        //font-size: 16px;
+        //font-weight: 600;
+      }
+
+      &__content {
+        //font-size: 0.8em;
+      }
+    }
+
+    .flickity {
+      &-lazyloaded,
+      &-lazyerror {
+        opacity: 1;
+      }
+
+      /* no circle */
+      &-button {
+        background: transparent;
+
+        /* icon color */
+        &-icon {
+          fill: var(--usmb-color-dark);
+        }
+
+        /* hide disabled button */
+        &:disabled {
+          display: none;
+        }
+      }
+
+      &-prev-next-button {
+        &.previous {
+          left: -64px;
+        }
+
+        &.next {
+          right: -64px;
+        }
+      }
+
+      &-prev-next-button.next {
+        right: -64px;
+      }
+
+      &-page-dots {
+        bottom: -22px;
+
+        /* dots are lines */
+        .dot {
+          margin: 0;
+          border-radius: 0;
+          width: 0.5rem;
+          height: 4px;
+        }
+      }
+    }
+  }
+}
