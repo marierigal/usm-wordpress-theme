@@ -42,9 +42,11 @@ Theme::enqueue_scripts(['style' => 'assets/css/style.css']);
 Theme::register_blocks([
   new Block('meta-field-block'),
   new Block('player-thumbnail'),
+  new Block('sponsors-slider'),
 ]);
 
 Blocks\Meta_Field\Meta_Field_Block::init();
+Blocks\Slider\Slider::init();
 
 /**
  * Register format types
