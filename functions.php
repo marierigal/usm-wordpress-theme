@@ -88,8 +88,10 @@ Theme::register_template_part_areas([
  * Custom post types
  */
 Post_Types\Player::init();
+Post_Types\Sponsor::init();
 
 /**
  * Custom taxonomies
  */
 Taxonomies\Position::init();
+Taxonomies\Engagement_Level::init();

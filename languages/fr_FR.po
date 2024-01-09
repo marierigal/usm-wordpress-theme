@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: USM 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/usm-wordpress-"
 "theme\n"
-"POT-Creation-Date: 2024-01-09T13:39:58+00:00\n"
-"PO-Revision-Date: 2024-01-09 14:41+0100\n"
+"POT-Creation-Date: 2024-01-09T13:42:34+00:00\n"
+"PO-Revision-Date: 2024-01-09 17:56+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -146,7 +146,7 @@ msgstr "Modifier le joueur"
 #: includes/post-types/class-player.php:116
 msgctxt "Post type label"
 msgid "New player"
-msgstr "Nouveau oueur"
+msgstr "Nouveau joueur"
 
 #. translators: Label for viewing a singular item. Default is ‘View Post’ / ‘View Page’.
 #: includes/post-types/class-player.php:118
@@ -315,6 +315,377 @@ msgstr "Tableau trié par poste."
 msgctxt "Admin column label"
 msgid "Table sorted by role."
 msgstr "Tableau trié par rôle."
+
+#. translators: General name for the post type, usually plural. Default is ‘Posts’ / ‘Pages’.
+#. translators: Label for the menu name. Default is the same as name.
+#: includes/post-types/class-sponsor.php:61
+#: includes/post-types/class-sponsor.php:95
+msgctxt "Post type label"
+msgid "Sponsors"
+msgstr "Sponsors"
+
+#. translators: Name for one object of this post type. Default is ‘Post’ / ‘Page’.
+#: includes/post-types/class-sponsor.php:63
+msgctxt "Post type label"
+msgid "Sponsor"
+msgstr "Sponsor"
+
+#. translators: Label for adding a new item. Default is ‘Add New Post’ / ‘Add New Page’.
+#. translators: Label for adding a new singular item. Default is ‘Add New Post’ / ‘Add New Page’.
+#: includes/post-types/class-sponsor.php:65
+#: includes/post-types/class-sponsor.php:67
+msgctxt "Post type label"
+msgid "Add a sponsor"
+msgstr "Ajouter un sponsor"
+
+#. translators: Label for editing a singular item. Default is ‘Edit Post’ / ‘Edit Page’.
+#: includes/post-types/class-sponsor.php:69
+msgctxt "Post type label"
+msgid "Edit sponsor"
+msgstr "Modifier sponsor"
+
+#. translators: Label for the new item page title. Default is ‘New Post’ / ‘New Page’.
+#: includes/post-types/class-sponsor.php:71
+msgctxt "Post type label"
+msgid "New sponsor"
+msgstr "Nouveau sponsor"
+
+#. translators: Label for viewing a singular item. Default is ‘View Post’ / ‘View Page’.
+#: includes/post-types/class-sponsor.php:73
+#| msgctxt "Taxonomy label"
+#| msgid "View Position"
+msgctxt "Post type label"
+msgid "View sponsor"
+msgstr "Voir le sponsor"
+
+#. translators: Label for viewing post type archives. Default is ‘View Posts’ / ‘View Pages’.
+#: includes/post-types/class-sponsor.php:75
+#| msgctxt "Post type label"
+#| msgid "View players"
+msgctxt "Post type label"
+msgid "View sponsors"
+msgstr "Voir les sponsors"
+
+#. translators: Label for searching plural items. Default is ‘Search Posts’ / ‘Search Pages’.
+#: includes/post-types/class-sponsor.php:77
+#| msgctxt "Taxonomy label"
+#| msgid "Search Positions"
+msgctxt "Post type label"
+msgid "Search sponsors"
+msgstr "Rechercher des sponsors"
+
+#. translators: Label used when no items are found. Default is ‘No posts found’ / ‘No pages found’.
+#: includes/post-types/class-sponsor.php:79
+#| msgid "No posts found."
+msgctxt "Post type label"
+msgid "No sponsor found."
+msgstr "Aucun sponsor trouvé."
+
+#. translators: Label used when no items are in the Trash. Default is ‘No posts found in Trash’ / ‘No pages found in Trash’.
+#: includes/post-types/class-sponsor.php:81
+#| msgctxt "Post type label"
+#| msgid "No player found in trash."
+msgctxt "Post type label"
+msgid "No sponsor found in trash."
+msgstr "Aucun sponsor trouvé dans la corbeille."
+
+#. translators: Label used to prefix parents of hierarchical items. Not used on non-hierarchical post types. Default is ‘Parent Page:’.
+#: includes/post-types/class-sponsor.php:83
+#| msgctxt "Taxonomy label"
+#| msgid "Parent Position:"
+msgctxt "Post type label"
+msgid "Parent sponsor:"
+msgstr "Sponsor parent :"
+
+#. translators: Label to signify all items in a submenu link. Default is ‘All Posts’ / ‘All Pages’.
+#: includes/post-types/class-sponsor.php:85
+#| msgctxt "Taxonomy label"
+#| msgid "All Positions"
+msgctxt "Post type label"
+msgid "All sponsors"
+msgstr "Tous les sponsors"
+
+#. translators: Label for archives in nav menus. Default is ‘Post Archives’ / ‘Page Archives’.
+#: includes/post-types/class-sponsor.php:87
+#| msgctxt "Post type label"
+#| msgid "Player archives"
+msgctxt "Post type label"
+msgid "Sponsor archives"
+msgstr "Archives des sponsors"
+
+#. translators: Label for the attributes meta box. Default is ‘Post Attributes’ / ‘Page Attributes’.
+#: includes/post-types/class-sponsor.php:89
+#| msgctxt "Post type label"
+#| msgid "Player attributes"
+msgctxt "Post type label"
+msgid "Sponsor attributes"
+msgstr "Attributs du sponsor"
+
+#. translators: Label for the media frame button. Default is ‘Insert into post’ / ‘Insert into page’.
+#: includes/post-types/class-sponsor.php:91
+#| msgctxt "Post type label"
+#| msgid "Add to player"
+msgctxt "Post type label"
+msgid "Add to sponsor"
+msgstr "Ajouter au sponsor"
+
+#. translators: Label for the media frame filter. Default is ‘Uploaded to this post’ / ‘Uploaded to this page’.
+#: includes/post-types/class-sponsor.php:93
+#| msgctxt "Post type label"
+#| msgid "Uploaded to this player"
+msgctxt "Post type label"
+msgid "Uploaded to this sponsor"
+msgstr "Téléviser au sponsor"
+
+#. translators: Label for the table views hidden heading. Default is ‘Filter posts list’ / ‘Filter pages list’.
+#: includes/post-types/class-sponsor.php:97
+#| msgctxt "Post type label"
+#| msgid "Filter the list of players"
+msgctxt "Post type label"
+msgid "Filter the list of sponsors"
+msgstr "Filtrer la liste des sponsors"
+
+#. translators: Label for the date filter in list tables. Default is ‘Filter by date’.
+#: includes/post-types/class-sponsor.php:99
+#| msgctxt "Post type label"
+#| msgid "Filter players by date"
+msgctxt "Post type label"
+msgid "Filter sponsors by date"
+msgstr "Filtrer les sponsors par date"
+
+#. translators: Label for the table pagination hidden heading. Default is ‘Posts list navigation’ / ‘Pages list navigation’.
+#: includes/post-types/class-sponsor.php:101
+#| msgctxt "Post type label"
+#| msgid "Navigation in the list of players"
+msgctxt "Post type label"
+msgid "Navigation in the list of sponsors"
+msgstr "Navigation dans la liste des sponsors"
+
+#. translators: Label for the table hidden heading. Default is ‘Posts list’ / ‘Pages list’.
+#: includes/post-types/class-sponsor.php:103
+#| msgctxt "Pattern title"
+#| msgid "List of posts"
+msgctxt "Post type label"
+msgid "List of sponsors"
+msgstr "Liste des sponsors"
+
+#. translators: Label used when an item is published. Default is ‘Post published.’ / ‘Page published.’
+#: includes/post-types/class-sponsor.php:105
+#| msgctxt "Post type label"
+#| msgid "Player published."
+msgctxt "Post type label"
+msgid "Sponsor published."
+msgstr "Sponsor publié."
+
+#. translators: Label used when an item is published with private visibility. Default is ‘Post published privately.’ / ‘Page published privately.’
+#: includes/post-types/class-sponsor.php:107
+#| msgctxt "Post type label"
+#| msgid "Player published privately."
+msgctxt "Post type label"
+msgid "Sponsor published privately."
+msgstr "Sponsor publié en privé."
+
+#. translators: Label used when an item is switched to a draft. Default is ‘Post reverted to draft.’ / ‘Page reverted to draft.’
+#: includes/post-types/class-sponsor.php:109
+#| msgctxt "Post type label"
+#| msgid "Player reverted to draft."
+msgctxt "Post type label"
+msgid "Sponsor reverted to draft."
+msgstr "Sponsor repassé en brouillon."
+
+#. translators: Label used when an item is moved to Trash. Default is ‘Post trashed.’ / ‘Page trashed.’
+#: includes/post-types/class-sponsor.php:111
+#| msgctxt "Post type label"
+#| msgid "Player moved to trash."
+msgctxt "Post type label"
+msgid "Sponsor moved to trash."
+msgstr "Sponsor mis à la corbeille."
+
+#. translators: Label used when an item is scheduled for publishing. Default is ‘Post scheduled.’ / ‘Page scheduled.’
+#: includes/post-types/class-sponsor.php:113
+#| msgctxt "Post type label"
+#| msgid "Player scheduled."
+msgctxt "Post type label"
+msgid "Sponsor scheduled."
+msgstr "Sponsor planifié."
+
+#. translators: Label used when an item is updated. Default is ‘Post updated.’ / ‘Page updated.’
+#: includes/post-types/class-sponsor.php:115
+#| msgctxt "Post type label"
+#| msgid "Player updated."
+msgctxt "Post type label"
+msgid "Sponsor updated."
+msgstr "Sponsor mis à jour."
+
+#. translators: Title for a navigation link block variation. Default is ‘Post Link’ / ‘Page Link’.
+#: includes/post-types/class-sponsor.php:117
+msgctxt "Post type label"
+msgid "Sponsor link"
+msgstr "Lien d’un sponsor"
+
+#. translators: Description for a navigation link block variation. Default is ‘A link to a post.’ / ‘A link to a page.’
+#: includes/post-types/class-sponsor.php:119
+#| msgctxt "Taxonomy label"
+#| msgid "A link to a position"
+msgctxt "Post type label"
+msgid "A link to a sponsor."
+msgstr "Un lien vers un sponsor."
+
+#: includes/post-types/class-sponsor.php:167
+msgctxt "Admin column title"
+msgid "Engagement Level"
+msgstr "Niveau d’engagement"
+
+#: includes/post-types/class-sponsor.php:168
+#| msgctxt "Admin column label"
+#| msgid "Table sorted by role."
+msgctxt "Admin column label"
+msgid "Table sorted by engagement level."
+msgstr "Tableau trié par niveau d’engagement."
+
+#. translators: General name for the taxonomy, usually plural. The same as and overridden by $tax->label. Default 'Tags'/'Categories'.
+#: includes/taxonomies/class-engagement-level.php:33
+msgctxt "Taxonomy label"
+msgid "Engagement Levels"
+msgstr "Niveaux d’engagement"
+
+#. translators: Singular name for the taxonomy. Default 'Tag'/'Category'.
+#: includes/taxonomies/class-engagement-level.php:35
+msgctxt "Taxonomy label"
+msgid "Engagement Level"
+msgstr "Niveau d’engagement"
+
+#. translators: Default ‘Search Tags'/'Search Categories’.
+#: includes/taxonomies/class-engagement-level.php:37
+msgctxt "Taxonomy label"
+msgid "Search Engagement Levels"
+msgstr "Rechercher des niveaux d’engagement"
+
+#. translators: Default ‘Popular Tags'/'Popular Categories’.
+#: includes/taxonomies/class-engagement-level.php:39
+msgctxt "Taxonomy label"
+msgid "Popular Engagement Levels"
+msgstr "Niveaux d’engagements populaires"
+
+#. translators: Default ‘All Tags'/'All Categories’.
+#: includes/taxonomies/class-engagement-level.php:41
+msgctxt "Taxonomy label"
+msgid "All Engagement Levels"
+msgstr "Tous les niveaux d’engagement"
+
+#. translators: This label is only used for hierarchical taxonomies. Default ‘Parent Category’.
+#: includes/taxonomies/class-engagement-level.php:43
+msgctxt "Taxonomy label"
+msgid "Parent Engagement Level"
+msgstr "Niveau d’engagement parent"
+
+#. translators: The same as parent_item, but with colon : in the end.
+#: includes/taxonomies/class-engagement-level.php:45
+msgctxt "Taxonomy label"
+msgid "Parent Engagement Level:"
+msgstr "Niveau d’engagement parent :"
+
+#. translators: Default ‘Edit Tag'/'Edit Category’.
+#: includes/taxonomies/class-engagement-level.php:47
+msgctxt "Taxonomy label"
+msgid "Edit Engagement Level"
+msgstr "Modifier le niveau d’engagement"
+
+#. translators: Default ‘View Tag'/'View Category’.
+#: includes/taxonomies/class-engagement-level.php:49
+msgctxt "Taxonomy label"
+msgid "View Engagement Level"
+msgstr "Voir le niveau d’engagement"
+
+#. translators: Default ‘Update Tag'/'Update Category’.
+#: includes/taxonomies/class-engagement-level.php:51
+msgctxt "Taxonomy label"
+msgid "Update Engagement Level"
+msgstr "Modifier le niveau d’engagement"
+
+#. translators: Default ‘Add New Tag'/'Add New Category’.
+#: includes/taxonomies/class-engagement-level.php:53
+msgctxt "Taxonomy label"
+msgid "Add New Engagement Level"
+msgstr "Ajouter un nouveau niveau d’engagement"
+
+#. translators: Default ‘New Tag Name'/'New Category Name’.
+#: includes/taxonomies/class-engagement-level.php:55
+msgctxt "Taxonomy label"
+msgid "New Engagement Level Name"
+msgstr "Nom du nouveau niveau d’engagement"
+
+#. translators: This label is only used for non-hierarchical taxonomies. Default ‘Separate tags with commas’, used in the meta box.
+#: includes/taxonomies/class-engagement-level.php:57
+#| msgctxt "Taxonomy label"
+#| msgid "Separate positions with commas"
+msgctxt "Taxonomy label"
+msgid "Separate engagement levels with commas"
+msgstr "Séparer les niveaux d’engagement par une virgule"
+
+#. translators: This label is only used for non-hierarchical taxonomies. Default ‘Add or remove tags’, used in the meta box when JavaScript is disabled.
+#: includes/taxonomies/class-engagement-level.php:59
+msgctxt "Taxonomy label"
+msgid "Add or remove engagement levels"
+msgstr "Ajouter ou retirer des niveaux d’engagement"
+
+#. translators: This label is only used on non-hierarchical taxonomies. Default ‘Choose from the most used tags’, used in the meta box.
+#: includes/taxonomies/class-engagement-level.php:61
+#| msgctxt "Taxonomy label"
+#| msgid "Choose from the most used positions"
+msgctxt "Taxonomy label"
+msgid "Choose from the most used engagement levels"
+msgstr "Choisir parmi les niveaux d’engagement les plus utilisés"
+
+#. translators: Default ‘No tags found'/'No categories found’, used in the meta box and taxonomy list table.
+#: includes/taxonomies/class-engagement-level.php:63
+msgctxt "Taxonomy label"
+msgid "No engagement levels found."
+msgstr "Aucun niveau d’engagement trouvé."
+
+#. translators: Default ‘No tags'/'No categories’, used in the posts and media list tables.
+#: includes/taxonomies/class-engagement-level.php:65
+msgctxt "Taxonomy label"
+msgid "No engagement levels"
+msgstr "Aucun niveau d’engagement"
+
+#. translators: This label is only used for hierarchical taxonomies. Default ‘Filter by category’, used in the posts list table.
+#: includes/taxonomies/class-engagement-level.php:67
+msgctxt "Taxonomy label"
+msgid "Filter by engagement level"
+msgstr "Filtrer par niveau d’engagement"
+
+#. translators: Label for the table pagination hidden heading. Default 'Tags list navigation'/'Categories list navigation'.
+#: includes/taxonomies/class-engagement-level.php:69
+#| msgctxt "Taxonomy label"
+#| msgid "Positions list navigation"
+msgctxt "Taxonomy label"
+msgid "Engagement Levels list navigation"
+msgstr "Navigation dans la liste des niveaux d’engagement"
+
+#. translators: Label for the table hidden heading. Default 'Tags list'/'Categories list'.
+#: includes/taxonomies/class-engagement-level.php:71
+msgctxt "Taxonomy label"
+msgid "Engagement Levels list"
+msgstr "Liste des niveaux d’engagement"
+
+#. translators: Label displayed after a term has been updated. Default '&larr; Go to Tags'/'&larr; Go to Categories'
+#: includes/taxonomies/class-engagement-level.php:73
+msgctxt "Taxonomy label"
+msgid "&larr; Go to Engagement Levels"
+msgstr "&larr; Aller aux niveaux d’engagement"
+
+#. translators: Used in the block editor. Title for a navigation link block variation. Default ‘Tag Link'/'Category Link’.
+#: includes/taxonomies/class-engagement-level.php:75
+msgctxt "Taxonomy label"
+msgid "Engagement Level Link"
+msgstr "Lien d’un niveau d’engagement"
+
+#. translators: Used in the block editor. Description for a navigation link block variation. Default ‘A link to a tag'/'A link to a category’.
+#: includes/taxonomies/class-engagement-level.php:77
+msgctxt "Taxonomy label"
+msgid "A link to an engagement level"
+msgstr "Un lien vers un niveau d’engagement"
 
 #. translators: General name for the taxonomy, usually plural. The same as and overridden by $tax->label. Default 'Tags'/'Categories'.
 #: includes/taxonomies/class-position.php:33
