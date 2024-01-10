@@ -21,11 +21,6 @@
       "title": "Page Full Width"
     },
     {
-      "name": "page-full-width-no-title",
-      "postTypes": ["page"],
-      "title": "Page Full Width (No Title)"
-    },
-    {
       "name": "single-with-sidebar",
       "postTypes": ["post"],
       "title": "Single With Sidebar"
