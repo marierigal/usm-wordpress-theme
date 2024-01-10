@@ -46,7 +46,7 @@
     "@semantic-release/github",
     [
       "@semantic-release/exec", {
-      "publish": "yarn zip && gh release upload ${nextRelease.version} *.zip"
+      "publish": "yarn zip && gh release upload v${nextRelease.version} *.zip"
     }
     ]
   ]
