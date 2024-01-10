@@ -28,6 +28,7 @@
         height: 200px;
 
         &__image {
+          display: block;
           opacity: 1;
           transition: opacity 200ms ease-in-out;
           max-width: 100%;

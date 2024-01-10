@@ -15,6 +15,7 @@
     height: 100%;
 
     &__image {
+      display: block;
       transition: 200ms ease-in-out filter;
       max-width: 100%;
       height: auto;
@@ -66,8 +67,19 @@
     }
 
     &__separator {
-      margin: var(--wp--preset--spacing--small) 0;
+      opacity: 0.2;
+      margin-left: 0;
       width: 50%;
+
+      &:first-of-type {
+        margin-top: var(--wp--preset--spacing--small);
+        margin-bottom: var(--wp--preset--spacing--x-small);
+      }
+
+      &:last-of-type {
+        margin-top: var(--wp--preset--spacing--x-small);
+        margin-bottom: var(--wp--preset--spacing--small);
+      }
     }
   }
 
@@ -83,8 +95,8 @@
 
       &__info {
         top: 0;
-        background-color: transparentize(black, 0.3) !important;
         padding: var(--wp--preset--spacing--small);
+        filter: opacity(0.7);
 
         &__name {
           overflow: initial;
