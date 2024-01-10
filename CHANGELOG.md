@@ -1,3 +1,13 @@
+## [2.0.1](https://github.com/marierigal/usm-wordpress-theme/compare/v2.0.0...v2.0.1) (2024-01-10)
+
+
+### Bug Fixes
+
+* **blocks:** fix blocks style ([1610f30](https://github.com/marierigal/usm-wordpress-theme/commit/1610f308ffe8a747fe3e563113be0299e40e7ed6))
+* **languages:** update translations ([0c325b4](https://github.com/marierigal/usm-wordpress-theme/commit/0c325b4ac988ca37511ef4a7c540b53c721a84b0))
+* **style:** remove top margin on footer ([165ed9d](https://github.com/marierigal/usm-wordpress-theme/commit/165ed9daacf081358274f5b2659e2fd9054da990))
+* **templates:** fix full width template ([5408784](https://github.com/marierigal/usm-wordpress-theme/commit/540878447513310bfd5cee2b84136b45c0a3123b))
+
 # [2.0.0](https://github.com/marierigal/usm-wordpress-theme/compare/v1.1.0...v2.0.0) (2024-01-09)
 
 
