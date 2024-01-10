@@ -34,11 +34,6 @@
           "files": ["style.css"],
           "from": "Version:(\\s+).*",
           "to": "Version:$1${nextRelease.version}"
-        },
-        {
-          "files": ["package.json"],
-          "from": "\"version\": \".*\"",
-          "to": "\"version\": \"${nextRelease.version}\""
         }
       ]
     }
@@ -48,14 +43,10 @@
       "assets": ["CHANGELOG.md", "package.json", "style.css"]
     }
     ],
+    "@semantic-release/github",
     [
-      "@semantic-release/github", {
-      "assets": [
-        {
-          "path": "*.zip",
-          "name": "usm-wordpress-theme.zip"
-        }
-      ]
+      "@semantic-release/exec", {
+      "publish": "yarn zip && gh release upload ${nextRelease.version} *.zip"
     }
     ]
   ]

@@ -38,9 +38,6 @@ jobs:
       - name: Build
         run: yarn build
 
-      - name: Pack
-        run: yarn zip
-
       - name: Release
         run: npx semantic-release
         env:
