@@ -9,7 +9,7 @@ $fields = get_fields(get_the_ID());
 
 $first_name = $fields['prenom'] ?? '';
 $last_name = $fields['nom'] ?? '';
-$position = $fields['poste'] ?? '';
+$positions = wp_get_post_terms(get_the_ID(), 'position', ['fields' => 'names']);
 $height = $fields['taille'] ?? '';
 $weight = $fields['poids'] ?? '';
 $career = $fields['carriere'] ?? '';
@@ -43,9 +43,9 @@ $portrait_placeholder_url = esc_url(get_stylesheet_directory_uri()) . '/assets/i
       <?php echo $first_name . ' ' . strtoupper($last_name); ?>
     </h3>
 
-    <?php if ($position): ?>
+    <?php if ($positions): ?>
       <p class="usm-player__info__position">
-        <?php echo $position->name; ?>
+        <?php echo implode(', ', $positions); ?>
       </p>
     <?php endif; ?>
 
