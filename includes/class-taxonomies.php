@@ -22,8 +22,8 @@ class Taxonomies
   {
     // sort terms by the 'order' metadata
     usort($terms, function ($a, $b) {
-      $a_order = (int)get_term_meta($a->term_id, 'order', true) ?? 0;
-      $b_order = (int)get_term_meta($b->term_id, 'order', true) ?? 0;
+      $a_order = (int)get_term_meta($a->term_id ?? $a, 'order', true) ?? 0;
+      $b_order = (int)get_term_meta($b->term_id ?? $b, 'order', true) ?? 0;
       return $a_order - $b_order;
     });
 
