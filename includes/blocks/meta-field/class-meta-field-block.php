@@ -21,11 +21,10 @@ class Meta_Field_Block
    */
   public static function array_style_to_string(array $styles): string
   {
-    $style_string = '';
-    foreach ($styles as $key => $value) {
-      if ($value) $style_string .= $key . ': ' . $value . '; ';
-    }
-    return trim($style_string);
+    return array_reduce(array_keys($styles), function ($acc, $key) use ($styles) {
+      if ($styles[$key] === null) return $acc;
+      return $acc . trim($key) . ':' . trim($styles[$key]) . ';';
+    }, '');
   }
 
   /**
@@ -88,6 +87,46 @@ class Meta_Field_Block
 
     // register components
     self::register_components();
+
+    add_filter('meta_field_block_get_block_content', function (string $content, string $field_type, array $attributes) {
+      switch ($field_type) {
+        case 'image':
+          $size_slug = $attributes['imageSettings']['sizeSlug'] ?: 'medium';
+          $aspect_ratio = $attributes['imageSettings']['aspectRatio'] ?: 'auto';
+          $scale = $attributes['imageSettings']['scale'] ?: 'contain';
+          $width = $attributes['imageSettings']['width'] ?: '100%';
+          $height = $attributes['imageSettings']['height'] ?: '100%';
+
+          $value = get_field($attributes['fieldSettings']['key'] ?? '');
+          $image_id = is_array($value) ? ($value['ID'] ?? 0) : (is_numeric($value) ? $value : attachment_url_to_postid($value));
+          $image = wp_get_attachment_image($image_id, $size_slug, false, [
+            'style' => self::array_style_to_string([
+              'aspect-ratio' => $aspect_ratio,
+              'object-fit'   => $aspect_ratio && $aspect_ratio !== 'auto' ? $scale : 'contain',
+              'width'        => $width,
+              'height'       => $height,
+            ]),
+          ]);
+
+          if ($image) $content = $image;
+          break;
+
+        case 'url':
+          $url = $content;
+          $title = $attributes['urlSettings']['title'] ?? $url;
+          $target = $attributes['urlSettings']['targetBlank'] ? '_blank' : '_self';
+          $rel = $target === '_blank' ? 'rel="noreferrer noopener"' : '';
+
+          /** @noinspection HtmlUnknownAttribute */
+          $content = sprintf('<a href="%1$s" target="%3$s" %4$s>%2$s</a>', $url, $title, $target, $rel);
+          break;
+
+        default:
+          break;
+      }
+
+      return $content;
+    }, 10, 3);
   }
 
   /**
@@ -114,23 +153,12 @@ class Meta_Field_Block
     array      $args = []
   ): string
   {
-    $field_settings = $attributes['fieldSettings'] ?? [];
-    $field_type = $field_settings['type'] ?? false;
-
-    if ($field_type === 'image') {
-      $size_slug = $attributes['sizeSlug'] ?? false;
-
-      $value = get_field($field_settings['key'] ?? '');
-      $image_id = is_array($value) ? ($value['ID'] ?? 0) : (is_numeric($value) ? $value : attachment_url_to_postid($value));
-      $image = wp_get_attachment_image($image_id, $size_slug);
-
-      if ($image) $content = $image;
-    }
+    $field_type = $attributes['fieldSettings']['type'] ?? false;
 
     // Allow third-party plugins to alter the content.
     $content = apply_filters(
       'meta_field_block_get_block_content',
-      $content, $attributes, $block, $post_id, $object_type
+      $content, $field_type, $attributes, $block, $post_id, $object_type
     );
 
     $content = is_array($content) || is_object($content)
@@ -174,16 +202,13 @@ class Meta_Field_Block
       $classes .= " has-text-align-{$attributes['textAlign']}";
     }
 
-    $width = $attributes['width'] ?? '';
-    $height = $attributes['height'] ?? '';
-    $aspect_ratio = $attributes['aspectRatio'] ?? '';
-
     $wrapper_attributes = get_block_wrapper_attributes([
       'class' => trim($classes),
       'style' => $field_type === 'image' ? self::array_style_to_string([
-        'aspect-ratio' => $aspect_ratio ?: null,
-        'width'        => $height && $aspect_ratio ? '100%' : (int)$width || null,
-        'height'       => $width && $aspect_ratio ? '100%' : (int)$height || null,
+        'display'         => 'flex',
+        'align-items'     => 'center',
+        'justify-content' => 'center',
+        'margin'          => 0,
       ]) : '',
     ]);
 

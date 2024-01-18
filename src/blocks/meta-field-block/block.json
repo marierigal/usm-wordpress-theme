@@ -53,20 +53,22 @@
       "type": "boolean",
       "default": false
     },
-    "width": {
-      "type": "string"
+    "imageSettings": {
+      "type": "object",
+      "default": {
+        "width": "",
+        "height": "",
+        "aspectRatio": "auto",
+        "scale": "",
+        "sizeSlug": "medium"
+      }
     },
-    "height": {
-      "type": "string"
-    },
-    "aspectRatio": {
-      "type": "string"
-    },
-    "scale": {
-      "type": "string"
-    },
-    "sizeSlug": {
-      "type": "string"
+    "urlSettings": {
+      "type": "object",
+      "default": {
+        "title": "",
+        "targetBlank": false
+      }
     }
   },
   "supports": {

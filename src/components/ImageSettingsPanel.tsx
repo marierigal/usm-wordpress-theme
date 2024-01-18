@@ -9,24 +9,21 @@ import {
 import { _x } from '@wordpress/i18n';
 import { FC, useMemo } from 'react';
 
-export interface ImageDimensionPanelProps {
-  setAttributes: (props: any) => void;
+export interface ImageSettings {
   width?: string;
   height?: string;
-  aspectRatio?: string;
+  aspectRatio: string;
   scale?: string;
-  sizeSlug?: string;
+  sizeSlug: string;
 }
 
-export const ImageDimensionPanel: FC<ImageDimensionPanelProps> = ({
-  setAttributes,
-  width,
-  height,
-  aspectRatio = 'auto',
-  scale,
-  sizeSlug = 'medium',
-}) => {
-  console.log('sizeSlug', sizeSlug);
+export interface ImageDimensionPanelProps {
+  settings: ImageSettings;
+  onChange: (settings: ImageSettings) => void;
+}
+
+export const ImageSettingsPanel: FC<ImageDimensionPanelProps> = ({ settings, onChange }) => {
+  const { width, height, aspectRatio, scale, sizeSlug } = settings;
 
   const ratioOptions = [
     { value: 'auto', label: _x('Original', 'Ratio option', 'usm') },
@@ -76,7 +73,8 @@ export const ImageDimensionPanel: FC<ImageDimensionPanelProps> = ({
         options={ratioOptions}
         value={aspectRatio}
         onChange={value =>
-          setAttributes({
+          onChange({
+            ...settings,
             aspectRatio: value,
             scale: value === '' ? '' : scale || 'cover',
             height: value !== '' && width && height ? '' : height,
@@ -89,15 +87,16 @@ export const ImageDimensionPanel: FC<ImageDimensionPanelProps> = ({
           label={_x('Apply', 'Input label', 'usm')}
           value={scale}
           help={scaleHelp[scale]}
+          onChange={value =>
+            onChange({
+              ...settings,
+              scale: value as unknown as string | undefined,
+            })
+          }
           isBlock
         >
           {scaleOptions.map(({ label, value }) => (
-            <ToggleGroupControlOption
-              key={value}
-              value={value}
-              label={label}
-              onChange={value => setAttributes({ scale: value })}
-            />
+            <ToggleGroupControlOption key={value} value={value} label={label} />
           ))}
         </ToggleGroupControl>
       )}
@@ -110,7 +109,8 @@ export const ImageDimensionPanel: FC<ImageDimensionPanelProps> = ({
           units={units}
           min={0}
           onChange={value =>
-            setAttributes({
+            onChange({
+              ...settings,
               width: value,
               aspectRatio: value && height ? 'custom' : aspectRatio,
             })
@@ -124,7 +124,8 @@ export const ImageDimensionPanel: FC<ImageDimensionPanelProps> = ({
           units={units}
           min={0}
           onChange={value =>
-            setAttributes({
+            onChange({
+              ...settings,
               height: value,
               aspectRatio: width && value ? 'custom' : aspectRatio,
             })
@@ -136,7 +137,7 @@ export const ImageDimensionPanel: FC<ImageDimensionPanelProps> = ({
         label={_x('Resolution', 'Input label', 'usm')}
         options={sizeOptions}
         value={sizeSlug}
-        onChange={value => setAttributes({ sizeSlug: value })}
+        onChange={value => onChange({ ...settings, sizeSlug: value })}
         help={_x('Choose a size for the source image.', 'Input help', 'usm')}
       />
     </PanelBody>
