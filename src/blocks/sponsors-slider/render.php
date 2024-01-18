@@ -32,7 +32,9 @@ $is_empty_query = !$query->have_posts();
 
 <?php if (!$is_empty_query || is_admin()): ?>
   <div
-    class="usm-sponsors-slider <?php echo $is_empty_query && is_admin() ? ' usm-is-hidden' : '' ?>"
+    <?php echo wp_kses_data(get_block_wrapper_attributes([
+      'class' => 'usm-sponsors-slider' . ($is_empty_query && is_admin() ? ' usm-is-hidden' : ''),
+    ])); ?>
   >
     <h2 class="usm-sponsors-slider__title"><?php echo $term->name ?? '...' ?></h2>
 
