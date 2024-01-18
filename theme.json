@@ -251,46 +251,46 @@
         {
           "fluid": false,
           "name": "X Small",
-          "size": "0.6rem",
+          "size": "0.6em",
           "slug": "x-small"
         },
         {
           "fluid": false,
           "name": "Small",
-          "size": "0.8rem",
+          "size": "0.8em",
           "slug": "small"
         },
         {
           "fluid": true,
           "name": "Medium",
-          "size": "1rem",
+          "size": "1em",
           "slug": "medium"
         },
         {
           "fluid": {
-            "max": "1.5rem",
-            "min": "1.2rem"
+            "max": "1.2em",
+            "min": "1.1em"
           },
           "name": "Large",
-          "size": "1.5rem",
+          "size": "1.2em",
           "slug": "large"
         },
         {
           "fluid": {
-            "max": "2rem",
-            "min": "1.8rem"
+            "max": "1.5em",
+            "min": "1.3em"
           },
           "name": "X Large",
-          "size": "2rem",
+          "size": "1.5em",
           "slug": "x-large"
         },
         {
           "fluid": {
-            "max": "4rem",
-            "min": "3rem"
+            "max": "2em",
+            "min": "1.8em"
           },
           "name": "XX Large",
-          "size": "3rem",
+          "size": "2em",
           "slug": "xx-large"
         }
       ],
@@ -374,33 +374,33 @@
       },
       "h1": {
         "typography": {
-          "fontSize": "var(--wp--preset--font-size--xx-large)"
+          "fontSize": "3em"
         }
       },
       "h2": {
         "typography": {
-          "fontSize": "var(--wp--preset--font-size--x-large)"
+          "fontSize": "2.4em"
         }
       },
       "h3": {
         "typography": {
-          "fontSize": "var(--wp--preset--font-size--large)"
+          "fontSize": "2em"
         }
       },
       "h4": {
         "typography": {
-          "fontSize": "var(--wp--preset--font-size--medium)",
+          "fontSize": "1.4em",
           "textTransform": "uppercase"
         }
       },
       "h5": {
         "typography": {
-          "fontSize": "var(--wp--preset--font-size--medium)"
+          "fontSize": "1.2em"
         }
       },
       "h6": {
         "typography": {
-          "fontSize": "var(--wp--preset--font-size--small)"
+          "fontSize": "1em"
         }
       },
       "heading": {
