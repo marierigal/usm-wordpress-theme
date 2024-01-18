@@ -1,3 +1,19 @@
+# [2.1.0](https://github.com/marierigal/usm-wordpress-theme/compare/v2.0.1...v2.1.0) (2024-01-18)
+
+
+### Bug Fixes
+
+* **blocks:** fix class and style of sponsor slider ([a12e51f](https://github.com/marierigal/usm-wordpress-theme/commit/a12e51f4ac9c2fed9fec5c31cc872e29d607f75f))
+* **blocks:** use native taxonomy to display player poosition ([a83fecc](https://github.com/marierigal/usm-wordpress-theme/commit/a83fecc9868486565cac039884e81bf2e9b5d79a))
+* fix terms sorting if the term is the term ID ([a23267e](https://github.com/marierigal/usm-wordpress-theme/commit/a23267ed3a63248fb7c715d5f84d515b2e5038f1))
+* **templates:** fix default templates content width ([6e74912](https://github.com/marierigal/usm-wordpress-theme/commit/6e74912a5e618a0fcc0987bdb459c3bf4c70f2cc))
+
+
+### Features
+
+* **blocks:** render a link for URL field type ([28c8e63](https://github.com/marierigal/usm-wordpress-theme/commit/28c8e638c6899acc6e24f19eca162a8e79aaff0f))
+* **style:** update global style ([7e5e71e](https://github.com/marierigal/usm-wordpress-theme/commit/7e5e71ee4fca2033b13f263a4a88395bef1d04e3))
+
 ## [2.0.1](https://github.com/marierigal/usm-wordpress-theme/compare/v2.0.0...v2.0.1) (2024-01-10)
 
 
