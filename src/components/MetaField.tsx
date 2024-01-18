@@ -2,8 +2,12 @@ import { useBlockProps } from '@wordpress/block-editor';
 import { Spinner } from '@wordpress/components';
 import { Attachment, useEntityRecord } from '@wordpress/core-data';
 import classnames from 'classnames';
+import type { Property } from 'csstype';
 import dompurify from 'dompurify';
 import { FC } from 'react';
+
+import { ImageSettings } from './ImageSettingsPanel';
+import { UrlSettings } from './UrlSettingsPanel';
 
 export interface MetaFieldProps {
   value?: string;
@@ -17,11 +21,8 @@ export interface MetaFieldProps {
   suffix?: string;
   displayLayout?: string;
   showOutline?: boolean;
-  width?: string;
-  height?: string;
-  aspectRatio?: string;
-  scale?: string;
-  sizeSlug?: string;
+  imageSettings: ImageSettings;
+  urlSettings: UrlSettings;
 }
 
 export const MetaField: FC<MetaFieldProps> = ({
@@ -36,11 +37,8 @@ export const MetaField: FC<MetaFieldProps> = ({
   suffix,
   displayLayout,
   showOutline,
-  width,
-  height,
-  aspectRatio,
-  scale,
-  sizeSlug = 'medium',
+  imageSettings,
+  urlSettings: { title, targetBlank },
 }) => {
   const attachmentResolution =
     type === 'image' && useEntityRecord<Attachment<'view'>>('postType', 'attachment', value || '');
@@ -81,6 +79,14 @@ export const MetaField: FC<MetaFieldProps> = ({
   }
 
   if (type === 'image' && attachmentResolution && attachmentResolution.record) {
+    const {
+      width = '100%',
+      height = '100%',
+      aspectRatio = 'auto',
+      scale = 'contain',
+      sizeSlug = 'medium',
+    } = imageSettings;
+
     const sizeProps = attachmentResolution.record.media_details.sizes[
       sizeSlug as any
     ] as unknown as Record<string, any> | undefined;
@@ -90,9 +96,7 @@ export const MetaField: FC<MetaFieldProps> = ({
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        aspectRatio: aspectRatio || null,
-        width: height && aspectRatio ? '100%' : width || null,
-        height: width && aspectRatio ? '100%' : height || null,
+        margin: 0,
       };
 
       return (
@@ -110,9 +114,10 @@ export const MetaField: FC<MetaFieldProps> = ({
             className={`attachment-${sizeSlug} size-${sizeSlug}`}
             style={{
               aspectRatio,
-              objectFit: scale as any,
-              width: height && aspectRatio ? '100%' : width,
-              height: width && aspectRatio ? '100%' : height,
+              objectFit:
+                aspectRatio && aspectRatio !== 'auto' ? (scale as Property.ObjectFit) : 'contain',
+              width,
+              height,
             }}
             src={sizeProps.source_url}
             alt=""
@@ -123,6 +128,27 @@ export const MetaField: FC<MetaFieldProps> = ({
         </TagName>
       );
     }
+  }
+
+  if (type === 'url' && value) {
+    return (
+      <TagName
+        {...useBlockProps({
+          className: classNames,
+          style: showOutline ? showOutlineStyles : null,
+        })}
+      >
+        {PrefixElement}
+        <a
+          href={value}
+          target={targetBlank ? '_blank' : undefined}
+          rel={targetBlank ? 'noopener noreferrer' : undefined}
+        >
+          {title || value}
+        </a>
+        {SuffixElement}
+      </TagName>
+    );
   }
 
   return (

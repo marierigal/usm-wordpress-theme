@@ -4,11 +4,14 @@ import { FC } from 'react';
 
 import {
   EditorBlockStylePanel,
-  ImageDimensionPanel,
+  ImageSettings,
+  ImageSettingsPanel,
   MetaField,
   MetaFieldPanel,
   MetaFieldToolbar,
   PrefixSuffixPanel,
+  UrlSettings,
+  UrlSettingsPanel,
 } from '../../components';
 import { useDebounceField, useMaybeCurrentPost, useMFBData } from '../../hooks';
 import {
@@ -37,11 +40,8 @@ export interface Props {
   displayLayout?: string;
   tagName?: string;
   showOutline?: boolean;
-  width?: string;
-  height?: string;
-  aspectRatio?: string;
-  scale?: string;
-  sizeSlug?: string;
+  imageSettings: ImageSettings;
+  urlSettings: UrlSettings;
 }
 
 /**
@@ -66,11 +66,8 @@ export const edit: FC<BlockEditProps<Props>> = ({
     suffix,
     tagName = 'div',
     textAlign,
-    width,
-    height,
-    aspectRatio,
-    scale,
-    sizeSlug,
+    imageSettings,
+    urlSettings,
   },
   setAttributes,
   context,
@@ -182,13 +179,16 @@ export const edit: FC<BlockEditProps<Props>> = ({
         />
 
         {type === 'image' && (
-          <ImageDimensionPanel
-            setAttributes={setAttributes}
-            width={width}
-            height={height}
-            aspectRatio={aspectRatio}
-            scale={scale}
-            sizeSlug={sizeSlug}
+          <ImageSettingsPanel
+            settings={imageSettings}
+            onChange={settings => setAttributes({ imageSettings: settings })}
+          />
+        )}
+
+        {type === 'url' && (
+          <UrlSettingsPanel
+            settings={urlSettings}
+            onChange={settings => setAttributes({ urlSettings: settings })}
           />
         )}
 
@@ -214,11 +214,8 @@ export const edit: FC<BlockEditProps<Props>> = ({
         suffix={suffix}
         displayLayout={displayLayout}
         showOutline={showOutline}
-        width={width}
-        height={height}
-        aspectRatio={aspectRatio}
-        scale={scale}
-        sizeSlug={sizeSlug}
+        imageSettings={imageSettings}
+        urlSettings={urlSettings}
       />
     </>
   );
