@@ -84,6 +84,11 @@
           "gradient": "linear-gradient(135deg, #fbcb00, #52ae32)",
           "name": "Supernova & Apple",
           "slug": "gradient-supernova-apple"
+        },
+        {
+          "gradient": "linear-gradient(135deg, #e5e7e8, #ffffff)",
+          "name": "Gray light",
+          "slug": "gradient-gray-light"
         }
       ],
       "palette": [
