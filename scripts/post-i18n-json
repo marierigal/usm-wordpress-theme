@@ -1,0 +1,13 @@
+#!/bin/bash
+
+echo "Renaming language JSON files..."
+
+for file in "$PWD"/languages/*.json
+do
+  if [[ $(basename "$file") != usm-* ]]
+  then
+    mv -- "$file" "./languages/usm-$(basename "$file")"
+  fi
+done
+
+echo "Done!"
