@@ -102,7 +102,8 @@
         padding: var(--wp--preset--spacing--small);
         filter: opacity(0.7);
 
-        &__name {
+        &__name,
+        &__position {
           overflow: initial;
           white-space: initial;
           text-overflow: initial;
