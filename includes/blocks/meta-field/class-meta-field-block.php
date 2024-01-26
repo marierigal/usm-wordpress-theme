@@ -4,6 +4,7 @@ namespace USM\Blocks\Meta_Field;
 
 defined('ABSPATH') || exit;
 
+use USM\DOM_Helper;
 use USM\Traits\Singleton;
 use WP_Block;
 
@@ -15,17 +16,6 @@ class Meta_Field_Block
    * @var Meta_Field_Block_Component[]
    */
   const CORE_COMPONENTS = [ACF_Fields::class, Rest_Fields::class];
-
-  /**
-   * Transform style array to style string.
-   */
-  public static function array_style_to_string(array $styles): string
-  {
-    return array_reduce(array_keys($styles), function ($acc, $key) use ($styles) {
-      if ($styles[$key] === null) return $acc;
-      return $acc . trim($key) . ':' . trim($styles[$key]) . ';';
-    }, '');
-  }
 
   /**
    * Get object id by object type.
@@ -100,7 +90,7 @@ class Meta_Field_Block
           $value = get_field($attributes['fieldSettings']['key'] ?? '');
           $image_id = is_array($value) ? ($value['ID'] ?? 0) : (is_numeric($value) ? $value : attachment_url_to_postid($value));
           $image = wp_get_attachment_image($image_id, $size_slug, false, [
-            'style' => self::array_style_to_string([
+            'style' => DOM_Helper::format_styles_array([
               'aspect-ratio' => $aspect_ratio,
               'object-fit'   => $aspect_ratio && $aspect_ratio !== 'auto' ? $scale : 'contain',
               'width'        => $width,
@@ -204,7 +194,7 @@ class Meta_Field_Block
 
     $wrapper_attributes = get_block_wrapper_attributes([
       'class' => trim($classes),
-      'style' => $field_type === 'image' ? self::array_style_to_string([
+      'style' => $field_type === 'image' ? DOM_Helper::format_styles_array([
         'display'         => 'flex',
         'align-items'     => 'center',
         'justify-content' => 'center',

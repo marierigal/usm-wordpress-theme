@@ -43,6 +43,7 @@ Theme::register_blocks([
   new Block('meta-field-block'),
   new Block('player-thumbnail'),
   new Block('sponsors-slider'),
+  new Block('short-and-socks-tag'),
 ]);
 
 Blocks\Meta_Field\Meta_Field_Block::init();

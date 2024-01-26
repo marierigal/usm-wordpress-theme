@@ -4,7 +4,7 @@ namespace USM\Post_Types;
 
 defined('ABSPATH') || exit;
 
-use USM\Dropdown;
+use USM\DOM_Helper;
 use USM\Taxonomies\Position;
 use USM\Traits\Singleton;
 use WP_Query;
@@ -184,7 +184,7 @@ class Player
     if ($post_type !== self::POST_TYPE_NAME) return;
 
     // Role filter
-    echo Dropdown::get_html([
+    echo DOM_Helper::generate_dropdown_HTML([
       'show_option_all' => _x('All roles', 'Role option', 'usm'),
       'name'            => self::ADMIN_COLUMN_NAME_ROLE,
       'options'         => [
