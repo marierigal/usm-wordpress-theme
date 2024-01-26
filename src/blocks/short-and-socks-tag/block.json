@@ -1,12 +1,16 @@
 {
-  "name": "usm/player-thumbnail",
-  "title": "Player thumbnail",
-  "description": "Display a player thumbnail with name and position",
+  "name": "usm/short-and-socks-tag",
+  "title": "Short & Socks",
+  "description": "Display a tag with a short and socks",
   "category": "widgets",
-  "icon": "groups",
+  "icon": "tag",
   "keywords": [],
   "supports": {
     "html": false,
+    "color": {
+      "text": true,
+      "background": false
+    },
     "mode": false
   },
   "acf": {

@@ -2,7 +2,13 @@
 /**
  * The following variables are exposed:
  *
- * @var array $block ACF block
+ * @var array  $block        The block settings and attributes.
+ * @var string $content      The block inner HTML (empty).
+ * @var bool   $is_preview   True during backend preview render.
+ * @var int    $post_id      The post ID the block is rendering content against.
+ *                           This is either the post ID currently being displayed inside a query
+ *                           loop, or the post ID of the post hosting this block.
+ * @var array  $context      The context provided to the block by the post or its parent block.
  */
 
 $fields = get_fields(get_the_ID());
