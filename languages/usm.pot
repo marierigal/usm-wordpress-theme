@@ -2,14 +2,14 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: USM 2.0.0\n"
+"Project-Id-Version: USM 2.1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/usm-wordpress-theme\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-01-10T10:57:44+00:00\n"
+"POT-Creation-Date: 2024-01-29T17:55:21+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.9.0\n"
 "X-Domain: usm\n"
@@ -40,44 +40,44 @@ msgid "This data type requires the ACF plugin installed and activated!"
 msgstr ""
 
 #. translators: Label for core/navigation-link block arrow-link style
-#: functions.php:63
+#: functions.php:64
 msgctxt "Block style name"
 msgid "Arrow link"
 msgstr ""
 
 #. translators: Label for sidebar pattern category
-#: functions.php:71
+#: functions.php:72
 msgctxt "Pattern category name"
 msgid "Sidebar"
 msgstr ""
 
 #. translators: Label for sidebar template part area
-#: functions.php:82
+#: functions.php:83
 msgctxt "Part area name"
 msgid "Sidebar"
 msgstr ""
 
 #. translators: Description for sidebar template part area
-#: functions.php:84
+#: functions.php:85
 msgctxt "Part area description"
 msgid "The Sidebar template defines a page area that can be found on the Page (With Sidebar) template."
 msgstr ""
 
 #. translators: The display text for the "true" value of the true_false ACF field type
-#: includes/blocks/meta-field/class-acf-fields.php:261
+#: includes/blocks/meta-field/class-acf-fields.php:263
 msgid "Yes"
 msgstr ""
 
 #. translators: The display text for the "false" value of the true_false ACF field type
-#: includes/blocks/meta-field/class-acf-fields.php:266
+#: includes/blocks/meta-field/class-acf-fields.php:268
 msgid "No"
 msgstr ""
 
-#: includes/blocks/meta-field/class-acf-fields.php:433
+#: includes/blocks/meta-field/class-acf-fields.php:435
 msgid "This data type is not supported! Please contact the author for help."
 msgstr ""
 
-#: includes/blocks/meta-field/class-meta-field-block.php:137
+#: includes/blocks/meta-field/class-meta-field-block.php:155
 #: build/blocks/meta-field-block/index.js:1
 msgid "This data type is not supported!"
 msgstr ""
@@ -820,6 +820,26 @@ msgctxt "Pattern title"
 msgid "List of posts"
 msgstr ""
 
+#: patterns/pricing.php
+msgctxt "Pattern title"
+msgid "Pricing"
+msgstr ""
+
+#: patterns/pricing.php:19
+msgctxt "Pattern placeholder"
+msgid "Title"
+msgstr ""
+
+#: patterns/pricing.php:25
+msgctxt "Pattern placeholder"
+msgid "Subtitle"
+msgstr ""
+
+#: patterns/pricing.php:40
+msgctxt "Pattern placeholder"
+msgid "$100"
+msgstr ""
+
 #: patterns/sidebar.php
 msgctxt "Pattern title"
 msgid "Sidebar"
@@ -1063,6 +1083,21 @@ msgstr ""
 #: build/blocks/meta-field-block/index.js:1
 msgctxt "Input help"
 msgid "Choose basic layout for prefix, value and suffix. This block does not provide any CSS style for the meta field."
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgctxt "Panel title"
+msgid "URL Settings"
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgctxt "Input label"
+msgid "Title"
+msgstr ""
+
+#: build/blocks/meta-field-block/index.js:1
+msgctxt "Input label"
+msgid "Open in a new tab"
 msgstr ""
 
 #: build/blocks/meta-field-block/index.js:1
@@ -1424,6 +1459,18 @@ msgctxt "block description"
 msgid "Display a player thumbnail with name and position"
 msgstr ""
 
+#: build/blocks/short-and-socks-tag/block.json
+#: src/blocks/short-and-socks-tag/block.json
+msgctxt "block title"
+msgid "Short & Socks"
+msgstr ""
+
+#: build/blocks/short-and-socks-tag/block.json
+#: src/blocks/short-and-socks-tag/block.json
+msgctxt "block description"
+msgid "Display a tag with a short and socks"
+msgstr ""
+
 #: build/blocks/sponsors-slider/block.json
 #: src/blocks/sponsors-slider/block.json
 msgctxt "block title"
@@ -1509,6 +1556,11 @@ msgstr ""
 #: theme.json
 msgctxt "Gradient name"
 msgid "Supernova & Apple"
+msgstr ""
+
+#: theme.json
+msgctxt "Gradient name"
+msgid "Gray light"
 msgstr ""
 
 #: theme.json
