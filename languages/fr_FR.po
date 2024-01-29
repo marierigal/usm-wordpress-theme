@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: USM 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/usm-wordpress-"
 "theme\n"
-"POT-Creation-Date: 2024-01-10T10:57:44+00:00\n"
-"PO-Revision-Date: 2024-01-10 12:00+0100\n"
+"POT-Creation-Date: 2024-01-29T17:55:21+00:00\n"
+"PO-Revision-Date: 2024-01-29 18:55+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -40,25 +40,25 @@ msgstr ""
 "Ce type de donnée nécessite que l’extension ACF soit installée et activée !"
 
 #. translators: Label for core/navigation-link block arrow-link style
-#: functions.php:63
+#: functions.php:64
 msgctxt "Block style name"
 msgid "Arrow link"
 msgstr "Lien fléché"
 
 #. translators: Label for sidebar pattern category
-#: functions.php:71
+#: functions.php:72
 msgctxt "Pattern category name"
 msgid "Sidebar"
 msgstr "Colonne latérale"
 
 #. translators: Label for sidebar template part area
-#: functions.php:82
+#: functions.php:83
 msgctxt "Part area name"
 msgid "Sidebar"
 msgstr "Colonne latérale"
 
 #. translators: Description for sidebar template part area
-#: functions.php:84
+#: functions.php:85
 msgctxt "Part area description"
 msgid ""
 "The Sidebar template defines a page area that can be found on the Page (With "
@@ -68,22 +68,22 @@ msgstr ""
 "dans le modèle de page avec colonne latérale."
 
 #. translators: The display text for the "true" value of the true_false ACF field type
-#: includes/blocks/meta-field/class-acf-fields.php:261
+#: includes/blocks/meta-field/class-acf-fields.php:263
 msgid "Yes"
 msgstr "Oui"
 
 #. translators: The display text for the "false" value of the true_false ACF field type
-#: includes/blocks/meta-field/class-acf-fields.php:266
+#: includes/blocks/meta-field/class-acf-fields.php:268
 msgid "No"
 msgstr "Non"
 
-#: includes/blocks/meta-field/class-acf-fields.php:433
+#: includes/blocks/meta-field/class-acf-fields.php:435
 msgid "This data type is not supported! Please contact the author for help."
 msgstr ""
 "Ce type de données n'est pas pris en charge ! Veuillez contacter l'auteur "
 "pour obtenir de l'aide."
 
-#: includes/blocks/meta-field/class-meta-field-block.php:137
+#: includes/blocks/meta-field/class-meta-field-block.php:155
 #: build/blocks/meta-field-block/index.js:1
 msgid "This data type is not supported!"
 msgstr "Ce type de données n'est pas pris en charge !"
@@ -830,6 +830,26 @@ msgctxt "Pattern title"
 msgid "List of posts"
 msgstr "Liste d’articles"
 
+#: patterns/pricing.php
+msgctxt "Pattern title"
+msgid "Pricing"
+msgstr "Tarifs"
+
+#: patterns/pricing.php:19
+msgctxt "Pattern placeholder"
+msgid "Title"
+msgstr "Titre"
+
+#: patterns/pricing.php:25
+msgctxt "Pattern placeholder"
+msgid "Subtitle"
+msgstr "Sous-titre"
+
+#: patterns/pricing.php:40
+msgctxt "Pattern placeholder"
+msgid "$100"
+msgstr "100 €"
+
 #: patterns/sidebar.php
 msgctxt "Pattern title"
 msgid "Sidebar"
@@ -1078,6 +1098,21 @@ msgid ""
 msgstr ""
 "Choisissez la disposition de base pour le préfixe, la valeur et le suffixe. "
 "Ce bloc ne fournit aucun style CSS pour la donnée méta."
+
+#: build/blocks/meta-field-block/index.js:1
+msgctxt "Panel title"
+msgid "URL Settings"
+msgstr "Paramètres du lien"
+
+#: build/blocks/meta-field-block/index.js:1
+msgctxt "Input label"
+msgid "Title"
+msgstr "Titre"
+
+#: build/blocks/meta-field-block/index.js:1
+msgctxt "Input label"
+msgid "Open in a new tab"
+msgstr "Ouvrir dans un nouvel onglet"
 
 #: build/blocks/meta-field-block/index.js:1
 msgctxt "Help message"
@@ -1460,6 +1495,18 @@ msgctxt "block description"
 msgid "Display a player thumbnail with name and position"
 msgstr "Affiche la vignette d’un joueur"
 
+#: build/blocks/short-and-socks-tag/block.json
+#: src/blocks/short-and-socks-tag/block.json
+msgctxt "block title"
+msgid "Short & Socks"
+msgstr "Short & Chaussettes"
+
+#: build/blocks/short-and-socks-tag/block.json
+#: src/blocks/short-and-socks-tag/block.json
+msgctxt "block description"
+msgid "Display a tag with a short and socks"
+msgstr "Affiche une étiquette avec un short et des chaussettes"
+
 #: build/blocks/sponsors-slider/block.json
 #: src/blocks/sponsors-slider/block.json
 msgctxt "block title"
@@ -1546,6 +1593,11 @@ msgstr "Sapphire & Supernova"
 msgctxt "Gradient name"
 msgid "Supernova & Apple"
 msgstr "Supernova & Apple"
+
+#: theme.json
+msgctxt "Gradient name"
+msgid "Gray light"
+msgstr "Gris léger"
 
 #: theme.json
 msgctxt "Color name"
@@ -1676,3 +1728,9 @@ msgstr "Pied de page"
 msgctxt "Template part name"
 msgid "Sidebar"
 msgstr "Colonne latérale"
+
+#, fuzzy
+#~| msgid "Display a page link field."
+#~ msgctxt "block description"
+#~ msgid "Display a tag for license gifts."
+#~ msgstr "Affiche une donnée de type lien de page."
