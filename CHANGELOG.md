@@ -1,3 +1,19 @@
+# [2.2.0](https://github.com/marierigal/usm-wordpress-theme/compare/v2.1.0...v2.2.0) (2024-01-29)
+
+
+### Bug Fixes
+
+* **blocks:** remove ellipsis on player position on hover ([069a6cb](https://github.com/marierigal/usm-wordpress-theme/commit/069a6cbf325373cf6484ae58089db720c05e6afb))
+
+
+### Features
+
+* **acf:** allow career input for staff members ([bd8204b](https://github.com/marierigal/usm-wordpress-theme/commit/bd8204b08ea958b08412677dc70ed485863076d1))
+* **blocks:** add short and socks tag block ([b7c8ec6](https://github.com/marierigal/usm-wordpress-theme/commit/b7c8ec673ab0d007ad55d22edfb50f6499f75115))
+* **i18n:** update translations ([2a170b6](https://github.com/marierigal/usm-wordpress-theme/commit/2a170b6b6c7612d2eb755b7837257c8809e94c52))
+* **patterns:** add pricing pattern ([311c9e7](https://github.com/marierigal/usm-wordpress-theme/commit/311c9e7a7c8ea2f44b9a59ba093a2dcc8861d48c))
+* **theme:** add gray-light gradient ([0e306d6](https://github.com/marierigal/usm-wordpress-theme/commit/0e306d6f5074bb9e73acd426a8c770306c23ef62))
+
 # [2.1.0](https://github.com/marierigal/usm-wordpress-theme/compare/v2.0.1...v2.1.0) (2024-01-18)
 
 
