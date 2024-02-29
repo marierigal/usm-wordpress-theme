@@ -10,6 +10,16 @@ footer {
   margin-block-start: 0;
 }
 
+/* ACF */
 .acf-block-preview {
   display: contents;
+}
+
+/* Forminator */
+.forminator-checkbox__wrapper {
+  align-items: center !important;
+
+  .forminator-checkbox-box {
+    margin-top: 8px;
+  }
 }
