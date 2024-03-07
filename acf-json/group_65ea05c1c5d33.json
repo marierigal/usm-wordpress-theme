@@ -1,0 +1,47 @@
+{
+    "key": "group_65ea05c1c5d33",
+    "title": "Bloc Custom Sidebar",
+    "fields": [
+        {
+            "key": "field_65e47c3a2f412",
+            "label": "Default",
+            "name": "default",
+            "aria-label": "",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_65e3988f29c37"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 1,
+            "prefix_name": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "usm\/custom-sidebar"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1709902566
+}

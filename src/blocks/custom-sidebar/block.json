@@ -1,0 +1,17 @@
+{
+  "name": "usm/custom-sidebar",
+  "title": "Custom Sidebar",
+  "description": "Display a custom sidebar on the page",
+  "category": "text",
+  "icon": "align-pull-right",
+  "keywords": [],
+  "supports": {
+    "html": false,
+    "mode": false
+  },
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "render.php"
+  },
+  "textdomain": "usm"
+}

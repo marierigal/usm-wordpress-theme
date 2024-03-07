@@ -40,6 +40,7 @@ Theme::enqueue_scripts(['style' => 'assets/css/style.css']);
  * Register blocks
  */
 Theme::register_blocks([
+  new Block('custom-sidebar'),
   new Block('meta-field-block'),
   new Block('player-thumbnail'),
   new Block('sponsors-slider'),
@@ -91,6 +92,7 @@ Theme::register_template_part_areas([
  * Custom post types
  */
 Post_Types\Player::init();
+Post_Types\Sidebar::init();
 Post_Types\Sponsor::init();
 
 /**
