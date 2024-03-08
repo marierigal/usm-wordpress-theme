@@ -11,6 +11,10 @@ class Engagement_Level
 {
   use Singleton;
 
+  public const ASSIGN_TERMS_CAPABILITY = 'edit_sponsors';
+  public const POST_TYPE_NAMES = [
+    Sponsor::POST_TYPE_NAME,
+  ];
   public const TAXONOMY_NAME = 'engagement_level';
 
   public static function init(): void
@@ -27,7 +31,7 @@ class Engagement_Level
    */
   public static function register_taxonomy(): void
   {
-    register_taxonomy(self::TAXONOMY_NAME, [Sponsor::POST_TYPE_NAME], [
+    register_taxonomy(self::TAXONOMY_NAME, self::POST_TYPE_NAMES, [
       'labels'            => [
         /* translators: General name for the taxonomy, usually plural. The same as and overridden by $tax->label. Default 'Tags'/'Categories'. */
         'name'                       => _x('Engagement Levels', 'Taxonomy label', 'usm'),
@@ -86,7 +90,7 @@ class Engagement_Level
         'manage_terms' => 'manage_engagement_levels',
         'edit_terms'   => 'manage_engagement_levels',
         'delete_terms' => 'manage_engagement_levels',
-        'assign_terms' => 'edit_sponsors',
+        'assign_terms' => self::ASSIGN_TERMS_CAPABILITY,
       ],
       'meta_box_cb'       => false,
     ]);
