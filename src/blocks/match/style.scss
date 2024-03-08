@@ -1,0 +1,174 @@
+/**
+* BLOCK: Match
+*/
+
+.usm-match {
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--wp--preset--spacing--x-small);
+  background: var(--wp--preset--color--gray-light);
+  padding: var(--wp--preset--spacing--small);
+  color: var(--wp--preset--color--main);
+  text-align: center;
+  gap: var(--wp--preset--spacing--x-small);
+
+  &.is-style-featured {
+    background: var(--wp--preset--gradient--gradient-apple-sapphire);
+    color: var(--wp--preset--color--base);
+
+    .usm-match__teams__decorator {
+      border-color: var(--wp--preset--color--base);
+    }
+  }
+
+  > * {
+    margin: 0;
+  }
+
+  .versus {
+    width: 30px;
+    height: auto;
+
+    > path {
+      fill: currentColor;
+    }
+  }
+
+  .ffr-logo {
+    opacity: .5;
+    width: auto;
+    height: 80px;
+
+    > path {
+      fill: currentColor;
+    }
+  }
+
+  &__date {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: var(--wp--custom--font-weight--bold);
+  }
+
+  &__details {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: var(--wp--preset--spacing--medium);
+
+    > * {
+      margin: 0;
+    }
+
+    &__category {
+      border-radius: 1em;
+      padding: var(--wp--preset--spacing--xx-small) var(--wp--preset--spacing--small) 0;
+      text-transform: uppercase;
+      font-weight: var(--wp--custom--font-weight--bold);
+    }
+  }
+
+  &__teams {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--wp--preset--spacing--small);
+
+    &--without-score {
+      margin-top: var(--wp--preset--spacing--small);
+      gap: var(--wp--preset--spacing--medium);
+    }
+
+    > * {
+      margin: 0;
+    }
+
+    &__name {
+      text-transform: uppercase;
+      font-weight: var(--wp--custom--font-weight--bold);
+    }
+
+    &__decorator {
+      flex-grow: 1;
+      opacity: .2;
+      border-width: 0 0 2px;
+      border-color: var(--wp--preset--color--main);
+    }
+
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: var(--wp--preset--spacing--x-small);
+
+      > * {
+        margin: 0;
+      }
+
+      &__name {
+        @extend .usm-match__teams__name;
+      }
+
+      &__logo {
+        @extend .usm-match__scores__team__logo;
+      }
+    }
+  }
+
+  &__scores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--wp--preset--spacing--medium);
+
+    > * {
+      margin: 0;
+    }
+
+    &__team {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: var(--wp--preset--spacing--small);
+
+      > * {
+        margin: 0;
+      }
+
+      &--away {
+        flex-direction: row-reverse;
+      }
+
+      &__logo {
+        > img {
+          width: auto;
+          height: 80px;
+        }
+      }
+
+      &__score {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        > * {
+          margin: 0;
+        }
+
+        &__points,
+        &__tries {
+          text-align: center;
+        }
+
+        &__points {
+          font-size: 3em;
+          font-weight: var(--wp--custom--font-weight--bold);
+        }
+
+        &__tries {
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
