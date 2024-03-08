@@ -46,6 +46,13 @@ $sample_match = [
   ],
 ];
 
+if (!$match_id) {
+  $current_post_post_type = get_post_type($post_id);
+  if ($current_post_post_type === 'event') {
+    $match_id = $post_id;
+  }
+}
+
 $match = $match_id ? get_fields($match_id) : $sample_match;
 if ($match['event_type'] !== 'match') return $is_preview ? __('Match not found', 'usm') : '';
 
