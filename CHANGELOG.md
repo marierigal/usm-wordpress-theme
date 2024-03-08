@@ -1,3 +1,21 @@
+# [2.3.0](https://github.com/marierigal/usm-wordpress-theme/compare/v2.2.0...v2.3.0) (2024-03-08)
+
+
+### Bug Fixes
+
+* ignore acf preview bloc only on certain blocks ([7273a49](https://github.com/marierigal/usm-wordpress-theme/commit/7273a49522069311fe2501301d6243af16c62ea0))
+* **style:** fix forminator checkbox style ([e6cfdaf](https://github.com/marierigal/usm-wordpress-theme/commit/e6cfdaf1c815346bbe21739767b2eeda97814996))
+
+
+### Features
+
+* **blocks:** add usm/custom-sidebar block ([9de46c3](https://github.com/marierigal/usm-wordpress-theme/commit/9de46c36db6aff239713abd8059a1244436c334f))
+* **post-types:** add events post type ([fc6e0cb](https://github.com/marierigal/usm-wordpress-theme/commit/fc6e0cbd622de5d3454ad2df36b34ca217cc8245))
+* **post-types:** set sponsor's category and logo optional ([a41e20a](https://github.com/marierigal/usm-wordpress-theme/commit/a41e20a09f64503c6db485b32bed9722151918f0))
+* **style:** set scroll behavior to smooth ([4bccf22](https://github.com/marierigal/usm-wordpress-theme/commit/4bccf22543e18671972e09ca56e28f6eb92c3c75))
+* update templates with custom sidebar ([1f16176](https://github.com/marierigal/usm-wordpress-theme/commit/1f1617678c022e4bb64c613c37e0541a6cb19799))
+* update translations ([362bf4f](https://github.com/marierigal/usm-wordpress-theme/commit/362bf4f4639a8ed0e6d92da600eeb1bd849f664c))
+
 # [2.2.0](https://github.com/marierigal/usm-wordpress-theme/compare/v2.1.0...v2.2.0) (2024-01-29)
 
 
