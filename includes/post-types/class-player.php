@@ -195,10 +195,10 @@ class Player
     ]);
 
     // Position filter
-    $positionTaxonomy = get_taxonomy(Position::TAXONOMY_NAME);
-    if ($positionTaxonomy) {
+    $position_taxonomy = get_taxonomy(Position::TAXONOMY_NAME);
+    if ($position_taxonomy) {
       wp_dropdown_categories([
-        'show_option_all' => $positionTaxonomy->labels->all_items,
+        'show_option_all' => $position_taxonomy->labels->all_items,
         'taxonomy'        => Position::TAXONOMY_NAME,
         'name'            => Position::TAXONOMY_NAME,
         'orderby'         => 'name',

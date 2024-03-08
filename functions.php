@@ -41,6 +41,7 @@ Theme::enqueue_scripts(['style' => 'assets/css/style.css']);
  */
 Theme::register_blocks([
   new Block('custom-sidebar'),
+  new Block('match'),
   new Block('meta-field-block'),
   new Block('player-thumbnail'),
   new Block('sponsors-slider'),
@@ -91,6 +92,7 @@ Theme::register_template_part_areas([
 /**
  * Custom post types
  */
+Post_Types\Event::init();
 Post_Types\Player::init();
 Post_Types\Sidebar::init();
 Post_Types\Sponsor::init();
@@ -99,5 +101,12 @@ Post_Types\Sponsor::init();
  * Custom taxonomies
  */
 Taxonomies::init();
-Taxonomies\Position::init();
+Taxonomies\Competition::init();
 Taxonomies\Engagement_Level::init();
+Taxonomies\Position::init();
+Taxonomies\Season::init();
+
+/**
+ * Options pages
+ */
+Options_Pages\Theme_Options::init();
