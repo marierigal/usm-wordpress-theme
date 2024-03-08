@@ -1,6 +1,6 @@
 {
     "key": "group_659d5bbab4785",
-    "title": "Sponsor slider",
+    "title": "Bloc Slider Partenaires",
     "fields": [
         {
             "key": "field_659d5d5a2566c",
@@ -46,5 +46,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 1,
-    "modified": 1704815920
+    "modified": 1709830355
 }
