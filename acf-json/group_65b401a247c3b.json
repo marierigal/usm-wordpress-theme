@@ -1,6 +1,6 @@
 {
     "key": "group_65b401a247c3b",
-    "title": "Paramètres Short & Chaussettes",
+    "title": "Bloc Short &amp; Chaussettes",
     "fields": [
         {
             "key": "field_65b406968d2ed",
@@ -282,5 +282,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1706300406
+    "modified": 1709830036
 }

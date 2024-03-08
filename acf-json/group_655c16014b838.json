@@ -1,6 +1,6 @@
 {
     "key": "group_655c16014b838",
-    "title": "Détails Sponsor",
+    "title": "Détails Partenaire",
     "fields": [
         {
             "key": "field_655c161a6074a",
@@ -108,5 +108,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 1,
-    "modified": 1706625021
+    "modified": 1709830266
 }
