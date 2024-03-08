@@ -1,3 +1,15 @@
+# [2.4.0](https://github.com/marierigal/usm-wordpress-theme/compare/v2.3.0...v2.4.0) (2024-03-08)
+
+
+### Bug Fixes
+
+* **templates:** fix custom sidebar parameters ([14f396a](https://github.com/marierigal/usm-wordpress-theme/commit/14f396a5ba4b2e79040f02ed8201960d91025bb0))
+
+
+### Features
+
+* **block:** allow match block to be used in post template ([8ed4dc4](https://github.com/marierigal/usm-wordpress-theme/commit/8ed4dc4cc0f29891924617570b169bad4ba81f35))
+
 # [2.3.0](https://github.com/marierigal/usm-wordpress-theme/compare/v2.2.0...v2.3.0) (2024-03-08)
 
 
