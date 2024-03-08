@@ -11,6 +11,10 @@ class Position
 {
   use Singleton;
 
+  public const ASSIGN_TERMS_CAPABILITY = 'edit_players';
+  public const POST_TYPE_NAMES = [
+    Player::POST_TYPE_NAME,
+  ];
   public const TAXONOMY_NAME = 'position';
 
   public static function init(): void
@@ -27,7 +31,7 @@ class Position
    */
   public static function register_taxonomy(): void
   {
-    register_taxonomy(self::TAXONOMY_NAME, [Player::POST_TYPE_NAME], [
+    register_taxonomy(self::TAXONOMY_NAME, self::POST_TYPE_NAMES, [
       'labels'            => [
         /* translators: General name for the taxonomy, usually plural. The same as and overridden by $tax->label. Default 'Tags'/'Categories'. */
         'name'                       => _x('Positions', 'Taxonomy label', 'usm'),
@@ -86,7 +90,7 @@ class Position
         'manage_terms' => 'manage_positions',
         'edit_terms'   => 'manage_positions',
         'delete_terms' => 'manage_positions',
-        'assign_terms' => 'edit_players',
+        'assign_terms' => self::ASSIGN_TERMS_CAPABILITY,
       ],
       'meta_box_cb'       => false,
     ]);
