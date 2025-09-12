@@ -1,3 +1,10 @@
+# [2.5.0](https://github.com/marierigal/usm-wordpress-theme/compare/v2.4.0...v2.5.0) (2025-09-12)
+
+
+### Features
+
+* update event post-type and match block ([e8d0a4c](https://github.com/marierigal/usm-wordpress-theme/commit/e8d0a4cc9b91b0fb7c3900ddc4b412b8f53c3634))
+
 # [2.4.0](https://github.com/marierigal/usm-wordpress-theme/compare/v2.3.0...v2.4.0) (2024-03-08)
 
 
