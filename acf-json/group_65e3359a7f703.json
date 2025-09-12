@@ -44,6 +44,84 @@
                     "layout": "horizontal"
                 },
                 {
+                    "key": "field_65e4765b60ffe",
+                    "label": "Catégorie",
+                    "name": "category",
+                    "aria-label": "",
+                    "type": "taxonomy",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "33",
+                        "class": "",
+                        "id": ""
+                    },
+                    "taxonomy": "category",
+                    "add_term": 0,
+                    "save_terms": 1,
+                    "load_terms": 1,
+                    "return_format": "id",
+                    "field_type": "select",
+                    "allow_null": 0,
+                    "allow_in_bindings": 1,
+                    "bidirectional": 0,
+                    "multiple": 0,
+                    "bidirectional_target": []
+                },
+                {
+                    "key": "field_65e4769a60fff",
+                    "label": "Compétition",
+                    "name": "competition",
+                    "aria-label": "",
+                    "type": "taxonomy",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "33",
+                        "class": "",
+                        "id": ""
+                    },
+                    "taxonomy": "competition",
+                    "add_term": 0,
+                    "save_terms": 1,
+                    "load_terms": 1,
+                    "return_format": "id",
+                    "field_type": "select",
+                    "allow_null": 0,
+                    "allow_in_bindings": 1,
+                    "bidirectional": 0,
+                    "multiple": 0,
+                    "bidirectional_target": []
+                },
+                {
+                    "key": "field_68c3f3a0ff17a",
+                    "label": "Saison",
+                    "name": "season",
+                    "aria-label": "",
+                    "type": "taxonomy",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "33",
+                        "class": "",
+                        "id": ""
+                    },
+                    "taxonomy": "season",
+                    "add_term": 0,
+                    "save_terms": 1,
+                    "load_terms": 1,
+                    "return_format": "id",
+                    "field_type": "select",
+                    "allow_null": 0,
+                    "allow_in_bindings": 1,
+                    "bidirectional": 0,
+                    "multiple": 0,
+                    "bidirectional_target": []
+                },
+                {
                     "key": "field_65e476ac61000",
                     "label": "Date",
                     "name": "date",
@@ -80,58 +158,6 @@
                     "display_format": "H:i",
                     "return_format": "H:i",
                     "allow_in_bindings": 0
-                },
-                {
-                    "key": "field_65e4765b60ffe",
-                    "label": "Catégorie",
-                    "name": "category",
-                    "aria-label": "",
-                    "type": "taxonomy",
-                    "instructions": "",
-                    "required": 1,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "50",
-                        "class": "",
-                        "id": ""
-                    },
-                    "taxonomy": "category",
-                    "add_term": 0,
-                    "save_terms": 1,
-                    "load_terms": 1,
-                    "return_format": "id",
-                    "field_type": "select",
-                    "allow_null": 0,
-                    "allow_in_bindings": 1,
-                    "bidirectional": 0,
-                    "multiple": 0,
-                    "bidirectional_target": []
-                },
-                {
-                    "key": "field_65e4769a60fff",
-                    "label": "Compétition",
-                    "name": "competition",
-                    "aria-label": "",
-                    "type": "taxonomy",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "50",
-                        "class": "",
-                        "id": ""
-                    },
-                    "taxonomy": "competition",
-                    "add_term": 0,
-                    "save_terms": 1,
-                    "load_terms": 1,
-                    "return_format": "id",
-                    "field_type": "select",
-                    "allow_null": 0,
-                    "allow_in_bindings": 1,
-                    "bidirectional": 0,
-                    "multiple": 0,
-                    "bidirectional_target": []
                 },
                 {
                     "key": "field_68c2a68c44a1f",
@@ -264,5 +290,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1757598241
+    "modified": 1757672484
 }

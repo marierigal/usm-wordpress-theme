@@ -47,6 +47,7 @@ class Event
     return array_merge(
       array_slice($post_columns, 0, $offset),
       [self::ADMIN_COLUMN_NAME_TAXONOMY_SEASON => $post_columns[self::ADMIN_COLUMN_NAME_TAXONOMY_SEASON]],
+      ['categories' => $post_columns['categories']],
       [self::ADMIN_COLUMN_NAME_TAXONOMY_COMPETITION => $post_columns[self::ADMIN_COLUMN_NAME_TAXONOMY_COMPETITION]],
       array_slice($post_columns, $offset)
     );
@@ -128,7 +129,7 @@ class Event
       'capability_type'   => ['event', 'events'],
       'map_meta_cap'      => true,
       'supports'          => ['title', 'author', 'revisions'],
-      'taxonomies'        => [Season::TAXONOMY_NAME, Competition::TAXONOMY_NAME],
+      'taxonomies'        => ['category', Season::TAXONOMY_NAME, Competition::TAXONOMY_NAME],
       'delete_with_user'  => false,
     ]);
   }
