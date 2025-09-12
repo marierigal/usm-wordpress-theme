@@ -1,3 +1,10 @@
+# [2.6.0](https://github.com/marierigal/usm-wordpress-theme/compare/v2.5.0...v2.6.0) (2025-09-12)
+
+
+### Features
+
+* add category field to event ([2148ca1](https://github.com/marierigal/usm-wordpress-theme/commit/2148ca137c50002b129105c81a75064ea4db0eac))
+
 # [2.5.0](https://github.com/marierigal/usm-wordpress-theme/compare/v2.4.0...v2.5.0) (2025-09-12)
 
 
