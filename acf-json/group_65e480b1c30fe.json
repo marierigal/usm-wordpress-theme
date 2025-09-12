@@ -36,7 +36,7 @@
             "name": "is_featured",
             "aria-label": "",
             "type": "true_false",
-            "instructions": "",
+            "instructions": "Affiche le bloc avec un fond de couleur",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -45,26 +45,6 @@
                 "id": ""
             },
             "message": "Mettre en avant le bloc",
-            "default_value": 0,
-            "ui_on_text": "",
-            "ui_off_text": "",
-            "ui": 1
-        },
-        {
-            "key": "field_65e9e9071d1b7",
-            "label": "Score",
-            "name": "is_displaying_score",
-            "aria-label": "",
-            "type": "true_false",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "message": "Afficher le score",
             "default_value": 0,
             "ui_on_text": "",
             "ui_off_text": "",
@@ -89,5 +69,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1709830206
+    "modified": 1757584251
 }

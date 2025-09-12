@@ -1,72 +1,85 @@
-# Copyright (C) 2024 Marie Rigal
+# Copyright (C) 2025 Marie Rigal
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: USM 2.2.0\n"
+"Project-Id-Version: USM 2.4.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/usm-wordpress-theme\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-03-08T13:11:23+00:00\n"
+"POT-Creation-Date: 2025-09-11T14:55:58+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.9.0\n"
+"X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: usm\n"
 
 #. Theme Name of the theme
+#: style.css
 msgid "USM"
 msgstr ""
 
 #. Theme URI of the theme
+#: style.css
 msgid "https://github.com/marierigal/usm-wordpress-theme"
 msgstr ""
 
 #. Description of the theme
+#: style.css
 msgid "A WordPress theme for USM website."
 msgstr ""
 
 #. Author of the theme
+#: style.css
 msgid "Marie Rigal"
 msgstr ""
 
 #. Author URI of the theme
+#: style.css
 msgid "https://github.com/marierigal"
 msgstr ""
 
-#: build/blocks/match/render.php:28
-#: src/blocks/match/render.php:28
+#: build/blocks/match/render.php:29
+#: src/blocks/match/render.php:29
+msgctxt "Match info"
+msgid "Place"
+msgstr ""
+
+#: build/blocks/match/render.php:30
+#: src/blocks/match/render.php:30
 msgctxt "Match info"
 msgid "Information"
 msgstr ""
 
-#: build/blocks/match/render.php:31
-#: src/blocks/match/render.php:31
+#: build/blocks/match/render.php:35
+#: src/blocks/match/render.php:35
 msgctxt "Team name"
 msgid "Home Team"
 msgstr ""
 
-#: build/blocks/match/render.php:40
-#: src/blocks/match/render.php:40
+#: build/blocks/match/render.php:44
+#: src/blocks/match/render.php:44
 msgctxt "Team name"
 msgid "Away Team"
 msgstr ""
 
-#: build/blocks/match/render.php:50
-#: src/blocks/match/render.php:50
-msgid "Match not found"
-msgstr ""
-
-#: build/blocks/match/render.php:53
-#: src/blocks/match/render.php:53
+#: build/blocks/match/render.php:78
+#: src/blocks/match/render.php:78
 msgctxt "Team name"
 msgid "Our Team"
 msgstr ""
 
-#: build/blocks/match/render.php:127
+#: build/blocks/match/render.php:111
+#: src/blocks/match/render.php:111
+msgctxt "Match status"
+msgid "Match canceled"
+msgstr ""
+
 #: build/blocks/match/render.php:150
-#: src/blocks/match/render.php:127
+#: build/blocks/match/render.php:173
 #: src/blocks/match/render.php:150
+#: src/blocks/match/render.php:173
+#, php-format
 msgctxt "Score tries"
 msgid "%s try"
 msgid_plural "%s tries"
@@ -123,6 +136,7 @@ msgstr ""
 
 #. translators: Recommended plugins admin notice message where %s is the list of missing plugins
 #: includes/class-plugin-manager.php:33
+#, php-format
 msgctxt "Admin notice"
 msgid "The following plugins are not installed and/or active but are recommended for this theme: %s"
 msgstr ""
@@ -164,192 +178,192 @@ msgstr ""
 
 #. translators: General name for the post type, usually plural. Default is ‘Posts’ / ‘Pages’.
 #. translators: Label for the menu name. Default is the same as name.
-#: includes/post-types/class-event.php:64
-#: includes/post-types/class-event.php:98
+#: includes/post-types/class-event.php:63
+#: includes/post-types/class-event.php:97
 msgctxt "Post type label"
 msgid "Events"
 msgstr ""
 
 #. translators: Name for one object of this post type. Default is ‘Post’ / ‘Page’.
-#: includes/post-types/class-event.php:66
+#: includes/post-types/class-event.php:65
 msgctxt "Post type label"
 msgid "Event"
 msgstr ""
 
 #. translators: Label for adding a new item. Default is ‘Add New Post’ / ‘Add New Page’.
 #. translators: Label for adding a new singular item. Default is ‘Add New Post’ / ‘Add New Page’.
-#: includes/post-types/class-event.php:68
-#: includes/post-types/class-event.php:70
+#: includes/post-types/class-event.php:67
+#: includes/post-types/class-event.php:69
 msgctxt "Post type label"
 msgid "Add an event"
 msgstr ""
 
 #. translators: Label for editing a singular item. Default is ‘Edit Post’ / ‘Edit Page’.
-#: includes/post-types/class-event.php:72
+#: includes/post-types/class-event.php:71
 msgctxt "Post type label"
 msgid "Edit event"
 msgstr ""
 
 #. translators: Label for the new item page title. Default is ‘New Post’ / ‘New Page’.
-#: includes/post-types/class-event.php:74
+#: includes/post-types/class-event.php:73
 msgctxt "Post type label"
 msgid "New event"
 msgstr ""
 
 #. translators: Label for viewing a singular item. Default is ‘View Post’ / ‘View Page’.
-#: includes/post-types/class-event.php:76
+#: includes/post-types/class-event.php:75
 msgctxt "Post type label"
 msgid "View event"
 msgstr ""
 
 #. translators: Label for viewing post type archives. Default is ‘View Posts’ / ‘View Pages’.
-#: includes/post-types/class-event.php:78
+#: includes/post-types/class-event.php:77
 msgctxt "Post type label"
 msgid "View events"
 msgstr ""
 
 #. translators: Label for searching plural items. Default is ‘Search Posts’ / ‘Search Pages’.
-#: includes/post-types/class-event.php:80
+#: includes/post-types/class-event.php:79
 msgctxt "Post type label"
 msgid "Search events"
 msgstr ""
 
 #. translators: Label used when no items are found. Default is ‘No posts found’ / ‘No pages found’.
-#: includes/post-types/class-event.php:82
+#: includes/post-types/class-event.php:81
 msgctxt "Post type label"
 msgid "No event found."
 msgstr ""
 
 #. translators: Label used when no items are in the Trash. Default is ‘No posts found in Trash’ / ‘No pages found in Trash’.
-#: includes/post-types/class-event.php:84
+#: includes/post-types/class-event.php:83
 msgctxt "Post type label"
 msgid "No event found in trash."
 msgstr ""
 
 #. translators: Label used to prefix parents of hierarchical items. Not used on non-hierarchical post types. Default is ‘Parent Page:’.
-#: includes/post-types/class-event.php:86
+#: includes/post-types/class-event.php:85
 msgctxt "Post type label"
 msgid "Parent event:"
 msgstr ""
 
 #. translators: Label to signify all items in a submenu link. Default is ‘All Posts’ / ‘All Pages’.
-#: includes/post-types/class-event.php:88
+#: includes/post-types/class-event.php:87
 msgctxt "Post type label"
 msgid "All events"
 msgstr ""
 
 #. translators: Label for archives in nav menus. Default is ‘Post Archives’ / ‘Page Archives’.
-#: includes/post-types/class-event.php:90
+#: includes/post-types/class-event.php:89
 msgctxt "Post type label"
 msgid "Event archives"
 msgstr ""
 
 #. translators: Label for the attributes meta box. Default is ‘Post Attributes’ / ‘Page Attributes’.
-#: includes/post-types/class-event.php:92
+#: includes/post-types/class-event.php:91
 msgctxt "Post type label"
 msgid "Event attributes"
 msgstr ""
 
 #. translators: Label for the media frame button. Default is ‘Insert into post’ / ‘Insert into page’.
-#: includes/post-types/class-event.php:94
+#: includes/post-types/class-event.php:93
 msgctxt "Post type label"
 msgid "Add to event"
 msgstr ""
 
 #. translators: Label for the media frame filter. Default is ‘Uploaded to this post’ / ‘Uploaded to this page’.
-#: includes/post-types/class-event.php:96
+#: includes/post-types/class-event.php:95
 msgctxt "Post type label"
 msgid "Uploaded to this event"
 msgstr ""
 
 #. translators: Label for the table views hidden heading. Default is ‘Filter posts list’ / ‘Filter pages list’.
-#: includes/post-types/class-event.php:100
+#: includes/post-types/class-event.php:99
 msgctxt "Post type label"
 msgid "Filter the list of events"
 msgstr ""
 
 #. translators: Label for the date filter in list tables. Default is ‘Filter by date’.
-#: includes/post-types/class-event.php:102
+#: includes/post-types/class-event.php:101
 msgctxt "Post type label"
 msgid "Filter events by date"
 msgstr ""
 
 #. translators: Label for the table pagination hidden heading. Default is ‘Posts list navigation’ / ‘Pages list navigation’.
-#: includes/post-types/class-event.php:104
+#: includes/post-types/class-event.php:103
 msgctxt "Post type label"
 msgid "Navigation in the list of events"
 msgstr ""
 
 #. translators: Label for the table hidden heading. Default is ‘Posts list’ / ‘Pages list’.
-#: includes/post-types/class-event.php:106
+#: includes/post-types/class-event.php:105
 msgctxt "Post type label"
 msgid "List of events"
 msgstr ""
 
 #. translators: Label used when an item is published. Default is ‘Post published.’ / ‘Page published.’
-#: includes/post-types/class-event.php:108
+#: includes/post-types/class-event.php:107
 msgctxt "Post type label"
 msgid "Event published."
 msgstr ""
 
 #. translators: Label used when an item is published with private visibility. Default is ‘Post published privately.’ / ‘Page published privately.’
-#: includes/post-types/class-event.php:110
+#: includes/post-types/class-event.php:109
 msgctxt "Post type label"
 msgid "Event published privately."
 msgstr ""
 
 #. translators: Label used when an item is switched to a draft. Default is ‘Post reverted to draft.’ / ‘Page reverted to draft.’
-#: includes/post-types/class-event.php:112
+#: includes/post-types/class-event.php:111
 msgctxt "Post type label"
 msgid "Event reverted to draft."
 msgstr ""
 
 #. translators: Label used when an item is moved to Trash. Default is ‘Post trashed.’ / ‘Page trashed.’
-#: includes/post-types/class-event.php:114
+#: includes/post-types/class-event.php:113
 msgctxt "Post type label"
 msgid "Event moved to trash."
 msgstr ""
 
 #. translators: Label used when an item is scheduled for publishing. Default is ‘Post scheduled.’ / ‘Page scheduled.’
-#: includes/post-types/class-event.php:116
+#: includes/post-types/class-event.php:115
 msgctxt "Post type label"
 msgid "Event scheduled."
 msgstr ""
 
 #. translators: Label used when an item is updated. Default is ‘Post updated.’ / ‘Page updated.’
-#: includes/post-types/class-event.php:118
+#: includes/post-types/class-event.php:117
 msgctxt "Post type label"
 msgid "Event updated."
 msgstr ""
 
 #. translators: Title for a navigation link block variation. Default is ‘Post Link’ / ‘Page Link’.
-#: includes/post-types/class-event.php:120
+#: includes/post-types/class-event.php:119
 msgctxt "Post type label"
 msgid "Event link"
 msgstr ""
 
 #. translators: Description for a navigation link block variation. Default is ‘A link to a post.’ / ‘A link to a page.’
-#: includes/post-types/class-event.php:122
+#: includes/post-types/class-event.php:121
 msgctxt "Post type label"
 msgid "A link to an event."
 msgstr ""
 
-#: includes/post-types/class-event.php:184
+#: includes/post-types/class-event.php:182
 msgctxt "Admin column title"
 msgid "Season"
 msgstr ""
 
-#: includes/post-types/class-event.php:185
+#: includes/post-types/class-event.php:183
 msgctxt "Admin column label"
 msgid "Table sorted by season."
 msgstr ""
 
-#: includes/post-types/class-event.php:191
+#: includes/post-types/class-event.php:189
 msgctxt "Admin column title"
 msgid "Competition"
 msgstr ""
 
-#: includes/post-types/class-event.php:192
+#: includes/post-types/class-event.php:190
 msgctxt "Admin column label"
 msgid "Table sorted by competition."
 msgstr ""
@@ -2429,9 +2443,4 @@ msgstr ""
 #: theme.json
 msgctxt "Template part name"
 msgid "Footer"
-msgstr ""
-
-#: theme.json
-msgctxt "Template part name"
-msgid "Sidebar"
 msgstr ""

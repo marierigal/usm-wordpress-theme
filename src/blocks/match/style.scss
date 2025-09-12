@@ -3,6 +3,7 @@
 */
 
 .usm-match {
+  position: relative;
   display: flex;
   flex-direction: column;
   border-radius: var(--wp--preset--spacing--x-small);
@@ -48,6 +49,27 @@
     text-align: center;
     text-transform: uppercase;
     font-weight: var(--wp--custom--font-weight--bold);
+  }
+
+  &__canceled {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.6);
+
+    &__label {
+      text-align: center;
+      color: #ff113d;
+      text-transform: uppercase;
+      font-weight: var(--wp--custom--font-weight--bold);
+      font-size: 3em;
+      transform: rotate(-15deg);
+    }
   }
 
   &__details {
@@ -170,5 +192,22 @@
         }
       }
     }
+  }
+
+  &__place {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--wp--preset--spacing--x-small);
+    text-align: center;
+    font-size: 1.2em;
+
+    &__text {
+      margin: 0;
+    }
+  }
+
+  &__other {
+    opacity: 0.6;
   }
 }

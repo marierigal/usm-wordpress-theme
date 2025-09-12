@@ -109,13 +109,14 @@
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "33",
+                        "width": "50",
                         "class": "",
                         "id": ""
                     },
                     "default_value": 0,
                     "min": 0,
                     "max": "",
+                    "allow_in_bindings": 1,
                     "placeholder": "",
                     "step": 1,
                     "prepend": "",
@@ -131,13 +132,14 @@
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "33",
+                        "width": "50",
                         "class": "",
                         "id": ""
                     },
                     "default_value": 0,
                     "min": 0,
                     "max": "",
+                    "allow_in_bindings": 1,
                     "placeholder": "",
                     "step": 1,
                     "prepend": "",
@@ -164,5 +166,5 @@
     "active": false,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1709474798
+    "modified": 1757585781
 }

@@ -4,7 +4,6 @@ namespace USM\Post_Types;
 
 defined('ABSPATH') || exit;
 
-use QM;
 use USM\Taxonomies\Competition;
 use USM\Taxonomies\Season;
 use USM\Traits\Singleton;
@@ -128,7 +127,7 @@ class Event
       'menu_icon'         => 'dashicons-calendar-alt',
       'capability_type'   => ['event', 'events'],
       'map_meta_cap'      => true,
-      'supports'          => ['title', 'author', 'editor', 'excerpt', 'revisions', 'thumbnail'],
+      'supports'          => ['title', 'author', 'revisions'],
       'taxonomies'        => [Season::TAXONOMY_NAME, Competition::TAXONOMY_NAME],
       'delete_with_user'  => false,
     ]);
@@ -156,7 +155,6 @@ class Event
 
     // Competition filter
     $competition_taxonomy = get_taxonomy(Competition::TAXONOMY_NAME);
-    QM::debug($competition_taxonomy);
     if ($competition_taxonomy) {
       wp_dropdown_categories([
         'show_option_all' => $competition_taxonomy->labels->all_items,

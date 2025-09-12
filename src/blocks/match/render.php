@@ -16,23 +16,27 @@ $attributes = $block['data'];
 $match_id = $attributes['match'] ?: null;
 if (!$is_preview && !$match_id) return '';
 
-$default_logo = file_get_contents(USM_ASSETS . '/images/ffr_full.svg');
-$versus_icon = file_get_contents(USM_ASSETS . '/images/versus.svg');
+$default_logo = file_get_contents(__DIR__ . '../../../../assets/images/ffr_full.svg');
+$versus_icon = file_get_contents(__DIR__ . '../../../../assets/images/versus.svg');
 
 $sample_match = [
-  'event_type'  => 'match',
-  'is_over'     => true,
-  'date'        => date('l j F Y'),
-  'category'    => null,
-  'competition' => null,
-  'info'        => _x('Information', 'Match info', 'usm'),
+  'match' => [
+    'status'     => 'planned',
+    'date'        => date('l j F Y'),
+    'time'        => date('H:i'),
+    'category'    => null,
+    'competition' => null,
+    'place'        => _x('Place', 'Match info', 'usm'),
+    'info'        => _x('Information', 'Match info', 'usm'),
+    'other'        => null,
+  ],
   'home_team'   => [
     'preset' => false,
     'name'   => _x('Home Team', 'Team name', 'usm'),
     'logo'   => null,
     'score'  => [
-      'points' => 27,
-      'tries'  => 3,
+      'points' => 0,
+      'tries'  => 0,
     ],
   ],
   'away_team'   => [
@@ -40,8 +44,8 @@ $sample_match = [
     'name'   => _x('Away Team', 'Team name', 'usm'),
     'logo'   => null,
     'score'  => [
-      'points' => 16,
-      'tries'  => 1,
+      'points' => 0,
+      'tries'  => 0,
     ],
   ],
 ];
@@ -53,50 +57,56 @@ if (!$match_id) {
   }
 }
 
-$match = $match_id ? get_fields($match_id) : $sample_match;
-if ($match['event_type'] !== 'match') return $is_preview ? __('Match not found', 'usm') : '';
+$status = get_field('match_status', $match_id);
+
+$category_id = get_field('match_category', $match_id);
+$category = $category_id ? get_term($category_id, 'category')->name : get_taxonomy('category')->labels->singular_name;
+
+$competition_id = get_field('match_competition', $match_id);
+$competition = $competition_id ? get_term($competition_id, 'competition')->name : get_taxonomy('competition')->labels->singular_name;
+
+$place = get_field('match_place', $match_id);
+
+$date = get_field('match_date', $match_id);
+$time = get_field('match_time', $match_id);
+
+$info = get_field('match_info', $match_id);
+
+$other = get_field('match_other', $match_id);
 
 $team_preset = get_field('team_preset', 'option');
 $team_preset_name = $team_preset['name'] ?: _x('Our Team', 'Team name', 'usm');
-$team_preset_logo = $team_preset['logo'] ?: $default_logo;
+$team_preset_logo = $team_preset['logo'] ?: null;
 
-$is_over = $match['is_over'];
-$category_id = $match['category'];
-$category = $category_id ? get_term($category_id, 'category')->name : get_taxonomy('category')->labels->singular_name;
-$competition_id = $match['competition'];
-$competition = $competition_id ? get_term($competition_id, 'competition')->name : get_taxonomy('competition')->labels->singular_name;
-$date = $match['date'];
-$info = $match['info'];
-
-$home_team = $match['home_team'];
+$home_team = get_field('home_team', $match_id);
 if ($home_team['preset']) {
   $home_team['name'] = $team_preset_name;
   $home_team['logo'] = $team_preset_logo;
 }
 
-$away_team = $match['away_team'];
+$away_team = get_field('away_team', $match_id);
 if ($away_team['preset']) {
   $away_team['name'] = $team_preset_name;
   $away_team['logo'] = $team_preset_logo;
 }
 ?>
 
-<div class="usm-match<?php echo $attributes['is_featured'] ? ' is-style-featured' : ''; ?>">
+<div class="usm-match<?php echo $attributes['is_featured'] ? ' is-style-featured' : ''; echo $status === 'canceled' ? ' is-style-canceled' : ''; ?>">
   <p
     class="usm-match__date has-large-font-size"
-  ><?php echo $date ?></p>
+  ><?php echo $date; echo $time ? ' — ' . $time : ''; ?></p>
 
   <div class="usm-match__details">
     <p
-      class="usm-match__details__category has-main-color has-tertiary-background-color"
+      class="usm-match__details__category has-base-color has-secondary-background-color"
     ><?php echo $category; ?></p>
 
     <p
       class="usm-match__details__infos"
-    ><?php echo $competition; ?><?php echo $info ? ' — ' . $info : ''; ?></p>
+    ><?php echo $competition; echo $info ? ' — ' . $info : ''; ?></p>
   </div>
 
-  <?php if ($attributes['is_displaying_score']) : ?>
+  <?php if ($status === 'over') : ?>
     <div class="usm-match__teams">
       <hr class="usm-match__teams__decorator" />
 
@@ -131,7 +141,7 @@ if ($away_team['preset']) {
 
           <p
             class="usm-match__scores__team__score__tries has-small-font-size"
-          ><?php printf(_nx('%s try', '%s tries', $home_team['score']['tries'], 'Score tries', 'usm'), number_format_i18n($home_team['score']['tries'])); ?></p>
+          ><?php if ($away_team['score']['tries']) : printf(_nx('%s try', '%s tries', $home_team['score']['tries'], 'Score tries', 'usm'), number_format_i18n($home_team['score']['tries'])); endif; ?></p>
         </div>
       </div>
 
@@ -154,7 +164,7 @@ if ($away_team['preset']) {
 
           <p
             class="usm-match__scores__team__score__tries has-small-font-size"
-          ><?php printf(_nx('%s try', '%s tries', $away_team['score']['tries'], 'Score tries', 'usm'), number_format_i18n($away_team['score']['tries'])); ?></p>
+          ><?php if ($away_team['score']['tries']) : printf(_nx('%s try', '%s tries', $away_team['score']['tries'], 'Score tries', 'usm'), number_format_i18n($away_team['score']['tries'])); endif; ?></p>
         </div>
       </div>
     </div>
@@ -174,7 +184,7 @@ if ($away_team['preset']) {
         ><?php echo $home_team['name']; ?></p>
       </div>
 
-      <?php echo file_get_contents(USM_ASSETS . '/images/versus.svg'); ?>
+      <?php echo $versus_icon; ?>
 
       <div class="usm-match__teams__wrapper">
         <?php if ($away_team['logo']) : ?>
@@ -189,6 +199,28 @@ if ($away_team['preset']) {
           class="usm-match__teams__wrapper__name has-heading-font-family has-xx-large-font-size"
         ><?php echo $away_team['name']; ?></p>
       </div>
+    </div>
+  <?php endif; ?>
+
+  <?php if ($place) : ?>
+  <div class="usm-match__place">
+    <div class="usm-match__place__icon wp-block-font-awesome-icon wp-font-awesome-icon">
+      <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="location-dot" class="svg-inline--fa fa-location-dot " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+        <path fill="currentColor" d="M0 188.6C0 84.4 86 0 192 0S384 84.4 384 188.6c0 119.3-120.2 262.3-170.4 316.8-11.8 12.8-31.5 12.8-43.3 0-50.2-54.5-170.4-197.5-170.4-316.8zM192 256a64 64 0 1 0 0-128 64 64 0 1 0 0 128z"></path>
+      </svg>
+    </div>
+
+    <p class="usm-match__place__text"><?php echo $place; ?></p>
+  </div>
+  <?php endif; ?>
+
+  <?php if ($other) : ?>
+    <p class="usm-match__other"><?php echo $other ; ?></p>
+  <?php endif; ?>
+
+  <?php if ($status === 'canceled') : ?>
+    <div class="usm-match__canceled">
+      <p class="usm-match__canceled__label"><?php echo _x('Match canceled', 'Match status', 'usm'); ?></p>
     </div>
   <?php endif; ?>
 </div>
